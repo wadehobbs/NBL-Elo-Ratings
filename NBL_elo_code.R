@@ -81,18 +81,6 @@ nbl_db <- nbl_db %>%
         mutate(result = if_else(Home_Score > Away_Score, 1,
                                 if_else(Home_Score == Away_Score, 0.5, 0)))
 
-#Elo
-#Set up the initial team elo values data frame
-teams <- data.frame(team = unique(c(nbl_db$Home, nbl_db$Away)))
-#Set intial values to 1500 (Standard in elo ratings)
-teams <- teams %>%
-        mutate(elo = 1500)
-
-#Set up elo score col (1 for a win, 0.5 for draw, 0 for loss)
-nbl_db <- nbl_db %>%
-        mutate(result = if_else(Home_Score > Away_Score, 1,
-                                if_else(Home_Score == Away_Score, 0.5, 0)))
-
 #Implement the elo rating algorithm over the data set
 #Each game is evaluated and elo scores given, then summed and stored in the 'teams' df
 for (i in seq_len(nrow(nbl_db))) {
