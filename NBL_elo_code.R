@@ -29,12 +29,10 @@ test <- url2 %>%
 
 #### Calculating Elo Ratings ####
 #Import data
-data_2017 <- read_excel("~/Dropbox/Personal/Jobs/NBL Elo Project/data_2017.xlsx", trim_ws = TRUE)
-data_2016 <- read_excel("~/Dropbox/Personal/Jobs/NBL Elo Project/data_2017.xlsx", sheet = "Sheet1", trim_ws = TRUE)
+nbl_db <- read_csv("raw_nbl_data.csv")
 #Clean: separate the score and date columns 
-data_2016 <- separate(data_2016, Score, into = c("Home_Score", "Away_Score"), sep = "\\:", remove = TRUE)
-data_2016 <- separate(data_2016, Date, into = c("Date", "Time"), sep = "\\. ", remove = TRUE)
-nbl_db <- rbind(data_2016, data_2017)
+nbl_db <- separate(data_2016, Score, into = c("Home_Score", "Away_Score"), sep = "\\:", remove = TRUE)
+nbl_db <- separate(data_2016, Date, into = c("Date", "Time"), sep = "\\. ", remove = TRUE)
 #Delete incomplete rows
 nbl_db <- nbl_db[complete.cases(nbl_db),]
 #Trim empty space on the away_score col
@@ -83,6 +81,21 @@ nbl_db <- nbl_db %>%
 
 #Implement the elo rating algorithm over the data set
 #Each game is evaluated and elo scores given, then summed and stored in the 'teams' df
+nbl_elo_calcs <- elo.run(nbl_db$result ~ nbl_db$Home + nbl_db$Away, data = nbl_db, k = 20, adjust = 100)
+nbl_elo_ratings2 <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs))
+
+#Team names are row names so need to set as a variable in data frame
+nbl_elo_ratings2 <- rownames_to_column(nbl_elo_ratings2, "Teams")
+nbl_elo_ratings2 <- arrange(nbl_elo_ratings2, desc(Elo.Ratings))
+#This could be more accurate by taking into account the home court advantage  
+nbl_elo_calcs <- elo.run(nbl_db$result ~ adjust(nbl_db$Home, 100) + nbl_db$Away, data = nbl_db, k = 20)
+
+#Account for winning margin
+#Add col with the absolute margin of victory for each game
+nbl_db$G <- abs(nbl_db$Home_Score - nbl_db$Away_Score)
+
+#Must run for loop as I could not get the elo.run function to work with the margin of victory multiplier
+#Problem was not being able to specify the team's elo rating - in the code below the teamA_elo value. 
 for (i in seq_len(nrow(nbl_db))) {
         game <- nbl_db[i, ]
         
@@ -94,7 +107,10 @@ for (i in seq_len(nrow(nbl_db))) {
         new_elo <- elo.calc(wins.A = game$result,
                             elo.A = teamA_elo,
                             elo.B = teamB_elo,
-                            k = 20)
+                            k = 20, adjust.B = (((game$G + 3)^0.8) / (7.5 + 0.006*(
+                                    ifelse(game$Home_Score > game$Away_Score, teamA_elo, teamB_elo) - 
+                                            ifelse(game$Home_Score > game$Away_Score, teamB_elo, teamA_elo) + 
+                                            ifelse(game$Home_Score > game$Away_Score, 100, -100)))))
         
         # The results come back as a data.frame
         # with team A's new rating in row 1 / column 1
@@ -108,7 +124,3 @@ for (i in seq_len(nrow(nbl_db))) {
                 mutate(elo = if_else(team == game$Home, teamA_new_elo,
                                      if_else(team == game$Away, teamB_new_elo, elo)))
 }
-
-#This could be more accurate by taking into account the score differential. 
-
-
