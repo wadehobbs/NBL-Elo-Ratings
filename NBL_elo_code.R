@@ -1,14 +1,16 @@
-#### Web Scraping NBL data ####
+####----Web Scraping NBL data----#### FAILED ATTEMPT
 library(XML)
 library(stringr)
+library(tidyverse)
 
 #Set URL
 url <- read_html("https://www.nbl.com.au/results")
 url2 <- read_html('https://www.flashscore.com/basketball/australia/nbl/results/')
-#Find the selector with SelectorGadget in browser - for this site it is as follows:
-selector <- '#g_3_M5R4rYF7 > td:nth-child(5)'
-xpath <- '/html/body/div[5]/div[1]/div/div[2]/div[1]/div[7]/div[3]/table[1]'
-#Pipe
+#Find the selector with SelectorGadget in browser (tried a few that couldnt get to work)
+selector <- ''
+xpath <- ''
+
+#Pipe using the rvest package
 test <- url %>%
         html_nodes(selector) %>%
         html_text() %>%
@@ -27,7 +29,8 @@ test <- url2 %>%
 #Ended up copy/pasting into excel from
 #https://www.flashscore.com/basketball/australia/nbl/results/
 
-#### Calculating Elo Ratings ####
+####----Cleaning and manipulating data----####
+
 #Import data
 nbl_db <- read_csv("raw_nbl_data.csv")
 #Clean: separate the score and date columns 
@@ -67,35 +70,47 @@ nbl_db$Date <- date
 nbl_db$Date <- dmy(nbl_db$Date) #Function converts to date
 arrange(nbl_db, Date)
 
-#Elo
-#Set up the initial team elo values data frame
-teams <- data.frame(team = unique(c(nbl_db$Home, nbl_db$Away)))
-#Set intial values to 1500 (Standard in elo ratings)
-teams <- teams %>%
-        mutate(elo = 1500)
+####----Elo ratings calculations----####
+library(elo)
 
+#Elo ratings using the elo package and elo.run function
 #Set up elo score col (1 for a win, 0.5 for draw, 0 for loss)
 nbl_db <- nbl_db %>%
         mutate(result = if_else(Home_Score > Away_Score, 1,
                                 if_else(Home_Score == Away_Score, 0.5, 0)))
+#Run elo.run function over data
+#This returns an object of class 'elo.run' - a list which is largely unusable without modification
 
-#Implement the elo rating algorithm over the data set
-#Each game is evaluated and elo scores given, then summed and stored in the 'teams' df
-nbl_elo_calcs <- elo.run(nbl_db$result ~ nbl_db$Home + nbl_db$Away, data = nbl_db, k = 20, adjust = 100)
-nbl_elo_ratings2 <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs))
+nbl_elo_calcs <- elo.run(nbl_db$result ~ nbl_db$Home + nbl_db$Away, data = nbl_db, k = 20)
+
+#Take the elo.run object, sum results using the final.elos function and set as a data frame
+nbl_elo_ratings <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs))
 
 #Team names are row names so need to set as a variable in data frame
-nbl_elo_ratings2 <- rownames_to_column(nbl_elo_ratings2, "Teams")
-nbl_elo_ratings2 <- arrange(nbl_elo_ratings2, desc(Elo.Ratings))
-#This could be more accurate by taking into account the home court advantage  
+nbl_elo_ratings <- rownames_to_column(nbl_elo_ratings, "Teams")
+
+#Arrange in descending order
+nbl_elo_ratings <- arrange(nbl_elo_ratings, desc(Elo.Ratings))
+
+#This could be more accurate by taking into account the home court advantage. 
+#100 is a standard set by fivethirtyeight from NBA data, good as an estimate 
 nbl_elo_calcs <- elo.run(nbl_db$result ~ adjust(nbl_db$Home, 100) + nbl_db$Away, data = nbl_db, k = 20)
 
-#Account for winning margin
+####--Account for winning margin--####
+
+#Set up the initial team elo values data frame
+teams <- data.frame(team = unique(c(nbl_db$Home, nbl_db$Away)))
+
+#Set intial values to 1500 (Standard in elo ratings)
+teams <- teams %>%
+        mutate(elo = 1500)
+
 #Add col with the absolute margin of victory for each game
 nbl_db$G <- abs(nbl_db$Home_Score - nbl_db$Away_Score)
 
 #Must run for loop as I could not get the elo.run function to work with the margin of victory multiplier
-#Problem was not being able to specify the team's elo rating - in the code below the teamA_elo value. 
+#Problem was not being able to specify the team's elo rating for each game - ie the teamA_elo value in the code below. 
+
 for (i in seq_len(nrow(nbl_db))) {
         game <- nbl_db[i, ]
         
@@ -110,7 +125,7 @@ for (i in seq_len(nrow(nbl_db))) {
                             k = 20, adjust.B = (((game$G + 3)^0.8) / (7.5 + 0.006*(
                                     ifelse(game$Home_Score > game$Away_Score, teamA_elo, teamB_elo) - 
                                             ifelse(game$Home_Score > game$Away_Score, teamB_elo, teamA_elo) + 
-                                            ifelse(game$Home_Score > game$Away_Score, 100, -100)))))
+                                                ifelse(game$Home_Score > game$Away_Score, 100, -100)))))
         
         # The results come back as a data.frame
         # with team A's new rating in row 1 / column 1
