@@ -149,4 +149,18 @@ for (i in seq_len(nrow(nbl_db))) {
         teams <- arrange(teams, desc(elo))
 }
 
+####Viz####
+all_elo_ratings <- data.frame(std = nbl_elo_ratings, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
+all_elo_ratings2 <- data.frame(std = nbl_elo_ratings, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
+colnames(all_elo_ratings) <- c("Teams", "Standard", "Home Court", "Margin")
+colnames(all_elo_ratings2) <- c("Teams", "Standard", "Home Court", "Margin")
+all_elo_ratings <- gather(all_elo_ratings, key = "Elo_Type", value = "Elo_Rating", Standard:Margin)
+all_elo_ratings2$mean <- rowMeans(all_elo_ratings2[,2:4])
+all_elo_ratings2 <- arrange(all_elo_ratings2, desc(mean))
+team_order <- all_elo_ratings2$Teams
 
+#plot
+ggplot(data = all_elo_ratings, aes(x = factor(Teams, level = team_order), y = Elo_Rating, col = Elo_Type, group = Elo_Type)) +
+        geom_jitter(width = 0.15, size = 5) +
+        theme(axis.title.x=element_blank(),
+              axis.title.y=element_blank())
