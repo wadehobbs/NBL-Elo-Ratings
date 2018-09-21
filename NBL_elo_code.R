@@ -30,6 +30,7 @@ test <- url2 %>%
 
 ####----Cleaning and manipulating data----####
 library(tidyverse)
+library(lubridate)
 
 #Import data
 nbl_db <- read_csv("raw_nbl_data.csv")
@@ -62,13 +63,23 @@ nbl_db$Away[nbl_db$Away == "Cairns"] <- "Cairns Taipans"
 #Needs to be done manually because it had no year when copy pasted. Had to maually add year
 #Then arrange by date
 date <- nbl_db$Date
-date[1:47] <- sub("$", ".17", date[1:47] )
-date[48:120] <- sub("$", ".16", date[48:120] )
-date[121:171] <- sub("$", ".18", date[121:171] )
-date[172:241] <- sub("$", ".17", date[172:241] )
+date[1:67] <- sub("$", ".14", date[1:67] )
+date[68:120] <- sub("$", ".13", date[68:120] )
+date[121:169] <- sub("$", ".15", date[121:169] )
+date[170:238] <- sub("$", ".14", date[170:238] )
+date[239:283] <- sub("$", ".16", date[239:283] )
+date[284:357] <- sub("$", ".15", date[284:357] )
+date[358:404] <- sub("$", ".17", date[358:404] )
+date[405:477] <- sub("$", ".16", date[405:477] )
+date[478:528] <- sub("$", ".18", date[478:528] )
+date[529:598] <- sub("$", ".17", date[529:598] )
+                     
 nbl_db$Date <- date
 nbl_db$Date <- dmy(nbl_db$Date) #Function converts to date
 nbl_db <- arrange(nbl_db, Date)
+
+#Save data for use with the shiny app
+write.csv(nbl_db, "cleaned_nbl_db.csv")
 
 ####----Elo ratings calculations----####
 library(elo)
@@ -83,13 +94,13 @@ nbl_db <- nbl_db %>%
 nbl_elo_calcs_std <- elo.run(nbl_db$result ~ nbl_db$Home + nbl_db$Away, data = nbl_db, k = 20)
 
 #Take the elo.run object, sum results using the final.elos function and set as a data frame
-nbl_elo_ratings <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs))
+nbl_elo_ratings_std <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs_std))
 
 #Team names are row names so need to set as a variable in data frame
-nbl_elo_ratings <- rownames_to_column(nbl_elo_ratings, "Teams")
+nbl_elo_ratings_std <- rownames_to_column(nbl_elo_ratings_std, "Teams")
 
 #Arrange in descending order
-nbl_elo_ratings <- arrange(nbl_elo_ratings, desc(Elo.Ratings))
+nbl_elo_ratings_std <- arrange(nbl_elo_ratings_std, desc(Elo.Ratings))
 
 #This could be more accurate by taking into account the home court advantage. 
 #100 is a standard set by fivethirtyeight from NBA data, good as an estimate 
@@ -105,6 +116,7 @@ nbl_elo_ratings_adj4hc <- arrange(nbl_elo_ratings_adj4hc, desc(Elo.Ratings))
 
 #Basic way to account for margin - can introduce autocorrelation
 nbl_elo_calcs <- elo.run(nbl_db$result ~ adjust(nbl_db$Home, 100)+ nbl_db$Away + k(20*log(G) + 1), data = nbl_db)
+
 #Set up the initial team elo values data frame
 teams <- data.frame(team = unique(c(nbl_db$Home, nbl_db$Away)))
 
@@ -150,8 +162,8 @@ for (i in seq_len(nrow(nbl_db))) {
 }
 
 ####Viz####
-all_elo_ratings <- data.frame(std = nbl_elo_ratings, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
-all_elo_ratings2 <- data.frame(std = nbl_elo_ratings, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
+all_elo_ratings <- data.frame(std = nbl_elo_ratings_std, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
+all_elo_ratings2 <- data.frame(std = nbl_elo_ratings_std, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
 colnames(all_elo_ratings) <- c("Teams", "Standard", "Home Court", "Margin")
 colnames(all_elo_ratings2) <- c("Teams", "Standard", "Home Court", "Margin")
 all_elo_ratings <- gather(all_elo_ratings, key = "Elo_Type", value = "Elo_Rating", Standard:Margin)
@@ -161,6 +173,6 @@ team_order <- all_elo_ratings2$Teams
 
 #plot
 ggplot(data = all_elo_ratings, aes(x = factor(Teams, level = team_order), y = Elo_Rating, col = Elo_Type, group = Elo_Type)) +
-        geom_jitter(width = 0.15, size = 5) +
+        geom_jitter(width = 0.1, size = 5) +
         theme(axis.title.x=element_blank(),
               axis.title.y=element_blank())
