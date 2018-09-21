@@ -1,0 +1,10 @@
+name: NBL_Elo
+title:
+username:
+account: analysingsport
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 458034
+bundleId: 1595980
+url: https://analysingsport.shinyapps.io/NBL_Elo/
+when: 1537457139.57362
