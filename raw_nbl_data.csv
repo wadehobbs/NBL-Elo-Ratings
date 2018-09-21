@@ -1,253 +1,627 @@
-﻿Date,Home,Away,Score
-05.03. 15:00,Perth Wildcats ,Illawarra Hawks,95 : 86
-01.03. 19:30,Illawarra Hawks,Perth Wildcats,77 : 89
-26.02. 19:00,Perth Wildcats,Illawarra Hawks,89 : 77
-23.02. 19:30,Adelaide 36ers,Illawarra Hawks ,98 : 106
-20.02. 21:30,Perth Wildcats ,Cairns Taipans,74 : 66
-19.02. 15:00,Illawarra Hawks,Adelaide 36ers,100 : 94
-17.02. 19:30,Cairns Taipans,Perth Wildcats,69 : 91
-16.02. 19:30,Adelaide 36ers,Illawarra Hawks,93 : 78
-12.02. 15:00,Melbourne United,Perth Wildcats,94 : 96
-11.02. 19:30,Adelaide 36ers,Cairns Taipans,89 : 98
-11.02. 17:30,Illawarra Hawks,Brisbane Bullets,106 : 79
-10.02. 21:30,Perth Wildcats,Sydney Kings,101 : 74
-10.02. 17:30,NZ Breakers,Melbourne United,88 : 70
-09.02. 19:30,Cairns Taipans,Adelaide 36ers,89 : 85
-06.02. 19:30,Melbourne United,Illawarra Hawks,78 : 72
-05.02. 15:00,Cairns Taipans,Perth Wildcats,85 : 77
-04.02. 19:30,Sydney Kings,Melbourne United,76 : 89
-04.02. 17:30,Adelaide 36ers,NZ Breakers,87 : 88
-03.02. 21:30,Perth Wildcats,Brisbane Bullets,94 : 63
-03.02. 19:30,Illawarra Hawks,Cairns Taipans,90 : 73
-29.01. 19:00,Cairns Taipans,Brisbane Bullets,97 : 83
-29.01. 15:00,Sydney Kings,NZ Breakers,84 : 57
-28.01. 21:30,Perth Wildcats,Melbourne United,73 : 71
-28.01. 19:30,Illawarra Hawks,Adelaide 36ers,95 : 92
-27.01. 19:30,Brisbane Bullets,Sydney Kings,77 : 80
-26.01. 17:30,NZ Breakers,Cairns Taipans,81 : 94
-22.01. 17:00,NZ Breakers,Perth Wildcats,86 : 82
-22.01. 15:00,Cairns Taipans,Illawarra Hawks,85 : 79
-21.01. 19:30,Adelaide 36ers,Sydney Kings,87 : 73
-21.01. 17:30,Brisbane Bullets,Melbourne United,88 : 71
-20.01. 21:30,Perth Wildcats,Cairns Taipans,84 : 78
-,,,
-20.01. 19:30,Illawarra Hawks,NZ Breakers,86 : 95
-19.01. 19:30,Adelaide 36ers,Brisbane Bullets,101 : 68
-16.01. 19:30,Cairns Taipans,Perth Wildcats,80 : 78
-15.01. 15:00,Brisbane Bullets,NZ Breakers,82 : 84
-14.01. 21:30,Perth Wildcats,Adelaide 36ers,84 : 95
-14.01. 19:30,Melbourne United,Cairns Taipans,92 : 85
-13.01. 19:30,Illawarra Hawks,Brisbane Bullets,85 : 80
-13.01. 17:30,NZ Breakers,Sydney Kings,92 : 74
-12.01. 19:30,Adelaide 36ers,Melbourne United,100 : 73
-09.01. 19:30,Brisbane Bullets,Perth Wildcats,68 : 72
-08.01. 15:00,NZ Breakers,Adelaide 36ers,95 : 113
-07.01. 19:30,Sydney Kings,Perth Wildcats,74 : 80
-07.01. 17:30,Illawarra Hawks,Melbourne United,106 : 88
-06.01. 19:30,Cairns Taipans,NZ Breakers,65 : 63
-05.01. 19:35,Adelaide 36ers,Illawarra Hawks,117 : 85
-01.01. 15:00,Melbourne United,Adelaide 36ers,104 : 73
-31.12. 19:30,Brisbane Bullets,Cairns Taipans,93 : 76
-31.12. 17:30,Illawarra Hawks,Perth Wildcats,87 : 95
-30.12. 19:30,Sydney Kings,NZ Breakers,85 : 80
-29.12. 19:30,Cairns Taipans,Melbourne United,78 : 79
-26.12. 19:30,Melbourne United,Brisbane Bullets,97 : 59
-23.12. 19:30,Sydney Kings,Illawarra Hawks,75 : 87
-22.12. 19:30,Adelaide 36ers,Perth Wildcats,78 : 74
-19.12. 19:30,Brisbane Bullets,Illawarra Hawks,85 : 91
-,,,
-18.12. 15:00,Sydney Kings,Adelaide 36ers,96 : 103
-17.12. 19:30,Brisbane Bullets,Melbourne United,100 : 90
-17.12. 17:30,Cairns Taipans,Illawarra Hawks,99 : 82
-16.12. 19:30,Adelaide 36ers,Sydney Kings,82 : 80
-15.12. 17:30,NZ Breakers,Perth Wildcats,69 : 57
-12.12. 19:30,Cairns Taipans,Adelaide 36ers,83 : 96
-11.12. 15:00,Sydney Kings,Melbourne United,81 : 88
-10.12. 19:30,Brisbane Bullets,Illawarra Hawks,88 : 98
-10.12. 17:30,Adelaide 36ers,NZ Breakers,102 : 92
-09.12. 21:30,Perth Wildcats,Melbourne United,92 : 89
-09.12. 19:30,Cairns Taipans,Sydney Kings,78 : 86
-08.12. 17:30,NZ Breakers,Brisbane Bullets,82 : 75
-05.12. 19:30,Illawarra Hawks,Sydney Kings,93 : 99
-04.12. 15:00,Melbourne United,NZ Breakers,98 : 74
-03.12. 19:40,Adelaide 36ers,Perth Wildcats,92 : 86
-,,,
-03.12. 17:30,Brisbane Bullets,Cairns Taipans,84 : 89
-02.12. 17:30,NZ Breakers,Illawarra Hawks,91 : 95
-01.12. 21:30,Perth Wildcats,Brisbane Bullets,75 : 90
-28.11. 19:30,Sydney Kings,Adelaide 36ers,85 : 91
-27.11. 19:00,Perth Wildcats,Illawarra Hawks,85 : 89
-27.11. 15:00,Cairns Taipans,NZ Breakers,91 : 80
-26.11. 19:30,Melbourne United,Sydney Kings,95 : 92
-24.11. 19:30,Brisbane Bullets,Adelaide 36ers,83 : 101
-20.11. 15:00,Illawarra Hawks,NZ Breakers,109 : 78
-19.11. 19:30,Sydney Kings,Perth Wildcats,83 : 72
-19.11. 17:30,Adelaide 36ers,Brisbane Bullets,87 : 105
-18.11. 19:30,Melbourne United,Cairns Taipans,84 : 79
-18.11. 17:30,NZ Breakers,Illawarra Hawks,100 : 85
-17.11. 21:30,Perth Wildcats,Sydney Kings,93 : 80
-13.11. 19:00,Perth Wildcats,NZ Breakers,86 : 87
-,,,
-13.11. 15:00,Cairns Taipans,Brisbane Bullets,76 : 84
-12.11. 19:30,Melbourne United,Sydney Kings,71 : 87
-12.11. 17:30,Adelaide 36ers,Illawarra Hawks,74 : 85
-11.11. 17:30,NZ Breakers,Cairns Taipans,79 : 86
-10.11. 19:30,Brisbane Bullets,Sydney Kings,86 : 73
-07.11. 19:30,Sydney Kings,Cairns Taipans,79 : 77
-06.11. 15:00,Illawarra Hawks,Melbourne United,82 : 73
-06.11. 13:00,NZ Breakers,Brisbane Bullets,86 : 70
-05.11. 21:30,Perth Wildcats,Adelaide 36ers,106 : 103
-05.11. 19:30,Cairns Taipans,Sydney Kings,64 : 57
-04.11. 19:30,Melbourne United,NZ Breakers,92 : 98
-,,,
-30.10. 19:00,Illawarra Hawks,Cairns Taipans,83 : 98
-30.10. 15:00,Sydney Kings,Brisbane Bullets,87 : 78
-29.10. 17:30,NZ Breakers,Adelaide 36ers,119 : 93
-28.10. 19:30,Illawarra Hawks,Perth Wildcats,81 : 76
-27.10. 19:30,Cairns Taipans,Melbourne United,83 : 76
-24.10. 19:30,Sydney Kings,Illawarra Hawks,90 : 73
-23.10. 15:00,Melbourne United,Perth Wildcats,69 : 72
-22.10. 19:30,Brisbane Bullets,NZ Breakers,88 : 82
-21.10. 21:30,Perth Wildcats,Illawarra Hawks,80 : 73
-21.10. 19:30,Adelaide 36ers,Cairns Taipans,83 : 67
-20.10. 19:30,Melbourne United,Brisbane Bullets,78 : 70
-20.10. 17:30,NZ Breakers,Sydney Kings,78 : 92
-16.10. 19:00,Brisbane Bullets,Adelaide 36ers,93 : 96
-,,,
-16.10. 15:00,Melbourne United,Illawarra Hawks,95 : 83
-15.10. 19:30,Sydney Kings,Cairns Taipans,92 : 78
-14.10. 21:30,Perth Wildcats,NZ Breakers,75 : 73
-14.10. 19:30,Adelaide 36ers,Melbourne United,87 : 98
-13.10. 19:30,Illawarra Hawks,Sydney Kings,84 : 88
-09.10. 15:00,Melbourne United,Adelaide 36ers,79 : 87
-08.10. 21:30,Perth Wildcats,Cairns Taipans,84 : 74
-,,,
-08.10. 17:30,Sydney Kings,Brisbane Bullets,73 : 77
-07.10. 19:30,Illawarra Hawks,Adelaide 36ers,122 : 88
-07.10. 17:30,NZ Breakers,Melbourne United,76 : 71
-06.10. 19:30,Brisbane Bullets,Perth Wildcats,72 : 65
-31.03. 18:00,Melbourne United ,Adelaide,100 : 82
-25.03. 15:00,Adelaide,Melbourne United,90 : 81
-23.03. 19:30,Melbourne United,Adelaide,101 : 98
-18.03. 15:00,Adelaide,Melbourne United,110 : 95
-16.03. 19:30,Melbourne United,Adelaide,107 : 96
-09.03. 21:30,Perth,Adelaide ,88 : 89
-05.03. 17:30,New Zealand Breakers,Melbourne United ,86 : 88
-,,,
-03.03. 19:30,Adelaide,Perth,109 : 74
-03.03. 17:30,Melbourne United,New Zealand Breakers,88 : 77
-18.02. 19:00,Perth,Cairns,89 : 61
-18.02. 17:00,Sydney,New Zealand Breakers,101 : 86
-18.02. 15:00,Melbourne United,Illawarra Hawks,84 : 94
-17.02. 17:30,Adelaide,Brisbane Bullets,105 : 82
-16.02. 19:30,Melbourne United,Perth,97 : 85
-16.02. 17:30,New Zealand Breakers,Illawarra Hawks,82 : 84
-15.02. 19:30,Brisbane Bullets,Sydney,73 : 90
-11.02. 15:00,Illawarra Hawks,Adelaide,87 : 111
-11.02. 13:00,New Zealand Breakers,Melbourne United,82 : 100
-10.02. 17:30,Sydney,Brisbane Bullets,92 : 80
-09.02. 21:30,Perth,Cairns,83 : 85
-09.02. 19:30,Melbourne United,New Zealand Breakers,89 : 83
-08.02. 19:30,Brisbane Bullets,Illawarra Hawks,99 : 91
-04.02. 15:00,Adelaide,Perth,94 : 82
-04.02. 13:00,New Zealand Breakers,Illawarra Hawks,88 : 84
-03.02. 19:30,Cairns,Sydney,86 : 93
-03.02. 17:30,Melbourne United,Brisbane Bullets,69 : 61
-02.02. 21:30,Perth,Adelaide,111 : 90
-02.02. 19:30,Illawarra Hawks,New Zealand Breakers,73 : 77
-28.01. 17:00,Illawarra Hawks,Cairns,88 : 78
-28.01. 15:00,Sydney,Melbourne United,76 : 93
-27.01. 20:30,Perth,New Zealand Breakers,90 : 73
-27.01. 17:30,Brisbane Bullets,Adelaide,95 : 90
-24.01. 19:30,Melbourne United,Cairns,79 : 68
-21.01. 17:00,Illawarra Hawks,Adelaide,93 : 112
-21.01. 15:00,Sydney,Perth,84 : 56
-20.01. 19:30,Cairns,New Zealand Breakers,81 : 71
-20.01. 17:30,Brisbane Bullets,Melbourne United,95 : 103
-19.01. 21:30,Perth,Sydney,77 : 84
-19.01. 19:30,Adelaide,Illawarra Hawks,112 : 90
-18.01. 17:30,New Zealand Breakers,Melbourne United,98 : 81
-14.01. 15:00,Brisbane Bullets,Perth,80 : 81
-13.01. 19:30,Illawarra Hawks,New Zealand Breakers,90 : 79
-13.01. 17:30,Sydney,Adelaide,101 : 104
-12.01. 21:30,Perth,Melbourne United,80 : 82
-11.01. 19:30,Adelaide,Cairns,100 : 90
-07.01. 15:00,Brisbane Bullets,Adelaide,84 : 95
-,,,
-07.01. 13:00,New Zealand Breakers,Cairns,82 : 69
-06.01. 19:30,Illawarra Hawks,Melbourne United,77 : 79
-06.01. 17:30,Sydney,Perth,68 : 76
-05.01. 19:30,Cairns,Brisbane Bullets,83 : 80
-04.01. 19:30,Adelaide,Perth,97 : 86
-31.12. 19:00,Cairns,Perth,68 : 83
-31.12. 15:00,Illawarra Hawks,Brisbane Bullets,104 : 82
-30.12. 17:30,Sydney,Melbourne United,79 : 103
-29.12. 19:30,Adelaide,New Zealand Breakers,88 : 85
-28.12. 19:30,Illawarra Hawks,Cairns,106 : 102
-26.12. 19:30,Melbourne United,Brisbane Bullets,69 : 68
-24.12. 15:00,Adelaide,Cairns,75 : 94
-23.12. 19:30,Illawarra Hawks,Perth,96 : 84
-23.12. 17:30,Brisbane Bullets,Sydney,95 : 101
-22.12. 19:30,Melbourne United,Adelaide,99 : 91
-21.12. 19:30,Sydney,New Zealand Breakers,95 : 98
-17.12. 15:00,Sydney,Cairns,88 : 69
-16.12. 19:30,Illawarra Hawks,Melbourne United,78 : 84
-16.12. 17:30,Perth,Brisbane Bullets,76 : 82
-15.12. 17:30,New Zealand Breakers,Adelaide,75 : 90
-14.12. 19:30,Cairns,Brisbane Bullets,74 : 75
-11.12. 19:30,Melbourne United,Sydney,95 : 69
-10.12. 17:00,Adelaide,New Zealand Breakers,95 : 92
-10.12. 15:00,Illawarra Hawks,Perth,91 : 99
-09.12. 19:30,Cairns,Melbourne United,79 : 70
-09.12. 17:30,Sydney,Brisbane Bullets,77 : 85
-08.12. 21:30,Perth,Adelaide,88 : 79
-07.12. 17:30,New Zealand Breakers,Brisbane Bullets,96 : 89
-04.12. 19:30,Melbourne United,Illawarra Hawks,91 : 73
-03.12. 15:00,Brisbane Bullets,New Zealand Breakers,81 : 76
-02.12. 17:30,Cairns,Sydney,80 : 71
-01.12. 19:30,Adelaide,Brisbane Bullets,84 : 83
-01.12. 17:30,New Zealand Breakers,Perth,73 : 89
-30.11. 19:30,Sydney,Cairns,81 : 72
-19.11. 15:00,Melbourne United,Perth,59 : 91
-19.11. 13:00,New Zealand Breakers,Brisbane Bullets,90 : 82
-18.11. 19:30,Cairns,Illawarra Hawks,87 : 66
-18.11. 17:30,Adelaide,Sydney,108 : 93
-17.11. 19:30,Brisbane Bullets,Perth,85 : 90
-16.11. 19:30,Illawarra Hawks,Sydney,97 : 93
-,,,
-12.11. 19:00,Perth,New Zealand Breakers,82 : 88
-12.11. 15:00,Brisbane Bullets,Cairns,82 : 74
-11.11. 19:30,Adelaide,Illawarra Hawks,87 : 96
-11.11. 17:30,Melbourne United,Sydney,108 : 90
-09.11. 19:30,Cairns,Melbourne United,92 : 69
-09.11. 17:30,New Zealand Breakers,Perth,88 : 84
-05.11. 15:00,Sydney,Illawarra Hawks,83 : 93
-04.11. 19:30,Cairns,New Zealand Breakers,70 : 73
-04.11. 17:30,Melbourne United,Adelaide,101 : 84
-03.11. 21:30,Perth,Sydney,93 : 69
-03.11. 19:30,Brisbane Bullets,Illawarra Hawks,81 : 112
-02.11. 19:30,Melbourne United,Cairns,87 : 65
-02.11. 17:30,New Zealand Breakers,Adelaide,92 : 88
-29.10. 15:00,Illawarra Hawks,Sydney,94 : 99
-,,,
-28.10. 17:30,Brisbane Bullets,Melbourne United,87 : 85
-27.10. 19:30,Cairns,Adelaide,80 : 84
-26.10. 21:30,Perth,Illawarra Hawks,105 : 74
-26.10. 19:30,Brisbane Bullets,New Zealand Breakers,96 : 101
-22.10. 19:00,Cairns,Perth,90 : 69
-22.10. 17:00,Illawarra Hawks,Brisbane Bullets,105 : 96
-22.10. 15:00,Melbourne United,New Zealand Breakers,76 : 88
-21.10. 17:30,Adelaide,Sydney,114 : 84
-20.10. 21:30,Perth,Melbourne United,89 : 84
-20.10. 19:30,Brisbane Bullets,Cairns,83 : 78
-19.10. 17:30,New Zealand Breakers,Sydney,90 : 73
-15.10. 15:00,Sydney,Illawarra Hawks,103 : 87
-14.10. 17:30,Adelaide,Melbourne United,79 : 99
-13.10. 21:30,Perth,Illawarra Hawks,74 : 64
-13.10. 17:30,New Zealand Breakers,Sydney,87 : 85
-12.10. 19:30,Cairns,Adelaide,70 : 96
-08.10. 15:00,New Zealand Breakers,Cairns,71 : 82
-07.10. 20:30,Perth,Brisbane Bullets,96 : 86
-07.10. 17:30,Sydney,Adelaide,96 : 105
-06.10. 19:30,Cairns,Illawarra Hawks,88 : 87
-05.10. 19:30,Adelaide,Melbourne United,97 : 99
+﻿Date,Home,Away,Score,Season
+13.04. 13:00,Perth Wildcats ,Adelaide 36ers,93 : 59,2013/14
+11.04. 19:30,Adelaide 36ers,Perth Wildcats,89 : 84,2013/14
+07.04. 21:30,Perth Wildcats,Adelaide 36ers,92 : 85,2013/14
+01.04. 19:30,Adelaide 36ers ,Melbourne United,102 : 63,2013/14
+30.03. 15:00,Illawarra Hawks,Perth Wildcats ,61 : 80,2013/14
+30.03. 13:00,Melbourne United,Adelaide 36ers,98 : 87,2013/14
+28.03. 21:30,Perth Wildcats,Illawarra Hawks,91 : 79,2013/14
+27.03. 19:30,Adelaide 36ers,Melbourne United,101 : 85,2013/14
+23.03. 17:00,Perth Wildcats,Illawarra Hawks,86 : 65,2013/14
+23.03. 13:00,Adelaide 36ers,Melbourne United,99 : 94,2013/14
+22.03. 19:30,Sydney Kings,Townsville,79 : 88,2013/14
+21.03. 19:30,Illawarra Hawks,Sydney Kings,100 : 87,2013/14
+21.03. 17:30,NZ Breakers,Cairns Taipans,83 : 95,2013/14
+16.03. 13:00,Sydney Kings,Adelaide 36ers,100 : 90,2013/14
+14.03. 20:30,Cairns Taipans,Melbourne United,66 : 73,2013/14
+14.03. 20:30,Townsville,Illawarra Hawks,85 : 94,2013/14
+14.03. 20:00,Adelaide 36ers,Perth Wildcats,102 : 79,2013/14
+13.03. 17:30,NZ Breakers,Sydney Kings,106 : 78,2013/14
+09.03. 13:00,Melbourne United,Sydney Kings,92 : 82,2013/14
+08.03. 20:00,Adelaide 36ers,Townsville,102 : 70,2013/14
+08.03. 19:30,Illawarra Hawks,Cairns Taipans,79 : 82,2013/14
+07.03. 21:30,Perth Wildcats,Townsville,81 : 69,2013/14
+07.03. 17:30,NZ Breakers,Melbourne United,84 : 97,2013/14
+02.03. 13:00,Sydney Kings,Perth Wildcats,81 : 85,2013/14
+01.03. 20:30,Cairns Taipans,NZ Breakers,92 : 87,2013/14
+01.03. 19:30,Melbourne United,Townsville,106 : 109,2013/14
+,,,,
+28.02. 19:30,Illawarra Hawks,Adelaide 36ers,91 : 89,2013/14
+27.02. 17:30,NZ Breakers,Townsville,102 : 99,2013/14
+23.02. 14:00,Adelaide 36ers,NZ Breakers,96 : 92,2013/14
+22.02. 20:30,Townsville,Sydney Kings,90 : 83,2013/14
+21.02. 22:00,Perth Wildcats,Melbourne United,87 : 75,2013/14
+21.02. 20:30,Cairns Taipans,Sydney Kings,63 : 85,2013/14
+21.02. 19:30,Illawarra Hawks,NZ Breakers,88 : 68,2013/14
+16.02. 14:00,Melbourne United,Adelaide 36ers,82 : 99,2013/14
+15.02. 19:30,Sydney Kings,Illawarra Hawks,84 : 102,2013/14
+14.02. 22:00,Perth Wildcats,Adelaide 36ers,85 : 61,2013/14
+14.02. 19:30,Illawarra Hawks,Townsville,90 : 75,2013/14
+14.02. 17:30,NZ Breakers,Cairns Taipans,96 : 78,2013/14
+09.02. 14:00,Illawarra Hawks,Adelaide 36ers,102 : 80,2013/14
+08.02. 20:30,Cairns Taipans,Townsville,82 : 90,2013/14
+08.02. 19:30,Sydney Kings,NZ Breakers,98 : 96,2013/14
+07.02. 20:30,Townsville,Perth Wildcats,88 : 75,2013/14
+02.02. 14:00,Melbourne United,Perth Wildcats,57 : 81,2013/14
+01.02. 20:00,Adelaide 36ers,Cairns Taipans,89 : 87,2013/14
+31.01. 20:30,Townsville,Illawarra Hawks,80 : 67,2013/14
+30.01. 22:00,Perth Wildcats,Cairns Taipans,94 : 99,2013/14
+,,,,
+30.01. 17:30,NZ Breakers,Sydney Kings,105 : 87,2013/14
+26.01. 17:30,Illawarra Hawks,Melbourne United,78 : 86,2013/14
+26.01. 14:00,Sydney Kings,Adelaide 36ers,105 : 93,2013/14
+24.01. 21:30,Perth Wildcats,Melbourne United,80 : 83,2013/14
+24.01. 20:30,Townsville,Cairns Taipans,79 : 90,2013/14
+23.01. 17:30,NZ Breakers,Illawarra Hawks,106 : 101,2013/14
+19.01. 14:00,Illawarra Hawks,Cairns Taipans,77 : 79,2013/14
+19.01. 14:00,Sydney Kings,Melbourne United,97 : 84,2013/14
+18.01. 20:00,Adelaide 36ers,Townsville,92 : 79,2013/14
+17.01. 21:30,Perth Wildcats,NZ Breakers,97 : 72,2013/14
+17.01. 20:30,Cairns Taipans,Sydney Kings,88 : 92,2013/14
+12.01. 15:00,Townsville,Perth Wildcats,97 : 103,2013/14
+12.01. 14:00,Adelaide 36ers,Sydney Kings,89 : 102,2013/14
+11.01. 20:30,Cairns Taipans,Illawarra Hawks,79 : 82,2013/14
+10.01. 22:00,Perth Wildcats,Townsville,102 : 87,2013/14
+10.01. 19:30,Melbourne United,NZ Breakers,87 : 93,2013/14
+05.01. 14:00,Melbourne United,Cairns Taipans,76 : 66,2013/14
+04.01. 20:00,Adelaide 36ers,NZ Breakers,99 : 73,2013/14
+04.01. 19:30,Illawarra Hawks,Perth Wildcats,96 : 91,2013/14
+,,,,
+03.01. 20:30,Townsville,Melbourne United,77 : 95,2013/14
+03.01. 19:30,Sydney Kings,Cairns Taipans,62 : 73,2013/14
+31.12. 20:30,Townsville,Adelaide 36ers,89 : 90,2013/14
+31.12. 19:30,Cairns Taipans,Perth Wildcats,99 : 90,2013/14
+31.12. 17:30,Illawarra Hawks,Melbourne United,81 : 91,2013/14
+,,,,
+29.12. 14:00,Sydney Kings,NZ Breakers,83 : 99,2013/14
+27.12. 19:30,Melbourne United,Illawarra Hawks,74 : 67,2013/14
+15.12. 14:00,Adelaide 36ers,Cairns Taipans,91 : 67,2013/14
+14.12. 20:30,Townsville,Melbourne United,71 : 76,2013/14
+14.12. 19:30,Sydney Kings,Illawarra Hawks,63 : 69,2013/14
+13.12. 20:30,Cairns Taipans,Townsville,87 : 74,2013/14
+13.12. 17:30,NZ Breakers,Perth Wildcats,62 : 71,2013/14
+08.12. 14:00,Melbourne United,NZ Breakers,84 : 82,2013/14
+07.12. 20:30,Cairns Taipans,Adelaide 36ers,98 : 78,2013/14
+07.12. 19:30,Illawarra Hawks,Sydney Kings,73 : 69,2013/14
+06.12. 21:30,Perth Wildcats,NZ Breakers,95 : 91,2013/14
+06.12. 20:30,Townsville,Adelaide 36ers,98 : 94,2013/14
+01.12. 14:00,Melbourne United,Sydney Kings,63 : 67,2013/14
+30.11. 20:30,Cairns Taipans,Perth Wildcats,75 : 85,2013/14
+,,,,
+29.11. 20:00,Adelaide 36ers,Illawarra Hawks,82 : 81,2013/14
+28.11. 17:30,NZ Breakers,Melbourne United,84 : 74,2013/14
+24.11. 18:00,Perth Wildcats,Sydney Kings,98 : 55,2013/14
+24.11. 14:00,Melbourne United,Townsville,75 : 90,2013/14
+23.11. 20:30,Cairns Taipans,Illawarra Hawks,73 : 75,2013/14
+22.11. 20:00,Adelaide 36ers,Perth Wildcats,91 : 86,2013/14
+22.11. 17:30,NZ Breakers,Townsville,81 : 74,2013/14
+17.11. 14:00,Illawarra Hawks,Perth Wildcats,76 : 89,2013/14
+16.11. 19:30,Melbourne United,Cairns Taipans,88 : 85,2013/14
+15.11. 19:30,Sydney Kings,Townsville,88 : 67,2013/14
+15.11. 17:30,NZ Breakers,Adelaide 36ers,94 : 95,2013/14
+14.11. 22:00,Perth Wildcats,Cairns Taipans,75 : 68,2013/14
+10.11. 14:00,Melbourne United,Illawarra Hawks,81 : 76,2013/14
+08.11. 20:30,Townsville,NZ Breakers,91 : 78,2013/14
+08.11. 20:00,Adelaide 36ers,Melbourne United,90 : 87,2013/14
+08.11. 19:30,Sydney Kings,Cairns Taipans,99 : 86,2013/14
+03.11. 14:00,Adelaide 36ers,Sydney Kings,97 : 84,2013/14
+03.11. 14:00,Illawarra Hawks,NZ Breakers,89 : 97,2013/14
+02.11. 20:30,Cairns Taipans,Melbourne United,74 : 86,2013/14
+01.11. 21:30,Perth Wildcats,Illawarra Hawks,87 : 47,2013/14
+01.11. 20:30,Townsville,Sydney Kings,86 : 88,2013/14
+31.10. 17:30,NZ Breakers,Adelaide 36ers,93 : 96,2013/14
+27.10. 14:00,Melbourne United,Adelaide 36ers,93 : 79,2013/14
+27.10. 14:00,Sydney Kings,Perth Wildcats,72 : 82,2013/14
+26.10. 19:30,Illawarra Hawks,Townsville,85 : 81,2013/14
+25.10. 20:30,Cairns Taipans,Adelaide 36ers,84 : 87,2013/14
+24.10. 17:30,NZ Breakers,Perth Wildcats,89 : 96,2013/14
+20.10. 14:00,Melbourne United,Perth Wildcats,71 : 75,2013/14
+19.10. 20:00,Adelaide 36ers,Illawarra Hawks,97 : 91,2013/14
+19.10. 19:30,Cairns Taipans,NZ Breakers,86 : 85,2013/14
+18.10. 21:30,Perth Wildcats,Sydney Kings,81 : 69,2013/14
+18.10. 20:30,Townsville,NZ Breakers,94 : 84,2013/14
+13.10. 14:00,Sydney Kings,Melbourne United,73 : 69,2013/14
+12.10. 21:00,Townsville,Cairns Taipans,92 : 103,2013/14
+11.10. 21:30,Perth Wildcats,Adelaide 36ers,83 : 80,2013/14
+10.10. 17:30,NZ Breakers,Illawarra Hawks,92 : 73,2013/14
+08.03. 13:00,NZ Breakers ,Cairns Taipans,83 : 81,2014/15
+06.03. 20:30,Cairns Taipans,NZ Breakers,71 : 86,2014/15
+01.03. 21:30,Perth Wildcats,Cairns Taipans ,68 : 80,2014/15
+28.02. 20:00,Adelaide 36ers,NZ Breakers ,83 : 94,2014/15
+27.02. 20:30,Cairns Taipans,Perth Wildcats,71 : 64,2014/15
+26.02. 17:30,NZ Breakers,Adelaide 36ers,111 : 82,2014/15
+22.02. 17:00,Illawarra Hawks,Adelaide 36ers,85 : 105,2014/15
+22.02. 17:00,Perth Wildcats,Townsville,81 : 71,2014/15
+22.02. 14:00,Melbourne United,Sydney Kings,95 : 92,2014/15
+22.02. 14:00,NZ Breakers,Cairns Taipans,77 : 81,2014/15
+20.02. 20:30,Townsville,Illawarra Hawks,82 : 66,2014/15
+20.02. 20:00,Adelaide 36ers,Perth Wildcats,101 : 94,2014/15
+20.02. 19:30,Sydney Kings,Melbourne United,88 : 91,2014/15
+15.02. 17:00,Perth Wildcats,NZ Breakers,87 : 89,2014/15
+,,,,
+15.02. 14:00,Sydney Kings,Illawarra Hawks,73 : 75,2014/15
+14.02. 20:30,Townsville,Melbourne United,105 : 68,2014/15
+13.02. 20:30,Cairns Taipans,Melbourne United,84 : 62,2014/15
+12.02. 17:30,NZ Breakers,Adelaide 36ers,88 : 93,2014/15
+08.02. 14:00,Sydney Kings,Cairns Taipans,78 : 92,2014/15
+07.02. 20:30,Townsville,NZ Breakers,79 : 71,2014/15
+07.02. 19:00,Melbourne United,Illawarra Hawks,76 : 82,2014/15
+06.02. 21:30,Perth Wildcats,Cairns Taipans,65 : 54,2014/15
+06.02. 20:00,Adelaide 36ers,Sydney Kings,97 : 78,2014/15
+01.02. 17:00,Cairns Taipans,Illawarra Hawks,63 : 60,2014/15
+01.02. 17:00,Perth Wildcats,Sydney Kings,80 : 61,2014/15
+01.02. 14:00,Adelaide 36ers,Townsville,84 : 77,2014/15
+30.01. 19:30,Illawarra Hawks,Melbourne United,93 : 82,2014/15
+29.01. 17:30,NZ Breakers,Perth Wildcats,90 : 79,2014/15
+25.01. 19:00,Melbourne United,Townsville,69 : 81,2014/15
+25.01. 14:00,Sydney Kings,Adelaide 36ers,86 : 105,2014/15
+24.01. 20:30,Cairns Taipans,Perth Wildcats,92 : 66,2014/15
+23.01. 20:30,Townsville,Perth Wildcats,85 : 93,2014/15
+,,,,
+23.01. 19:30,Illawarra Hawks,Adelaide 36ers,85 : 89,2014/15
+23.01. 17:30,NZ Breakers,Sydney Kings,81 : 101,2014/15
+21.01. 22:00,Perth Wildcats,Melbourne United,78 : 86,2014/15
+18.01. 14:00,Adelaide 36ers,Illawarra Hawks,83 : 78,2014/15
+18.01. 14:00,NZ Breakers,Melbourne United,88 : 75,2014/15
+17.01. 20:30,Cairns Taipans,Sydney Kings,80 : 76,2014/15
+16.01. 21:30,Perth Wildcats,Adelaide 36ers,102 : 106,2014/15
+16.01. 20:30,Townsville,Sydney Kings,81 : 89,2014/15
+11.01. 17:00,Townsville,Cairns Taipans,73 : 78,2014/15
+11.01. 14:00,Illawarra Hawks,NZ Breakers,84 : 86,2014/15
+10.01. 19:00,Melbourne United,Adelaide 36ers,89 : 91,2014/15
+09.01. 20:30,Cairns Taipans,Perth Wildcats,91 : 76,2014/15
+09.01. 19:30,Sydney Kings,Townsville,89 : 98,2014/15
+08.01. 17:30,NZ Breakers,Illawarra Hawks,98 : 91,2014/15
+,,,,
+04.01. 14:00,Adelaide 36ers,NZ Breakers,74 : 81,2014/15
+03.01. 20:30,Townsville,Cairns Taipans,75 : 79,2014/15
+02.01. 19:30,Sydney Kings,Melbourne United,68 : 82,2014/15
+31.12. 20:30,Townsville,Sydney Kings,93 : 92,2014/15
+31.12. 19:30,Cairns Taipans,Adelaide 36ers,77 : 84,2014/15
+,,,,
+31.12. 17:30,Illawarra Hawks,Perth Wildcats,77 : 86,2014/15
+28.12. 14:00,Melbourne United,Perth Wildcats,80 : 81,2014/15
+,,,,
+27.12. 20:00,Adelaide 36ers,Townsville,91 : 84,2014/15
+27.12. 19:30,Illawarra Hawks,Cairns Taipans,93 : 100,2014/15
+26.12. 19:30,Sydney Kings,NZ Breakers,85 : 97,2014/15
+21.12. 17:00,Cairns Taipans,NZ Breakers,83 : 59,2014/15
+21.12. 14:00,Melbourne United,Sydney Kings,105 : 101,2014/15
+,,,,
+19.12. 20:00,Adelaide 36ers,Cairns Taipans,90 : 86,2014/15
+19.12. 19:30,Illawarra Hawks,Melbourne United,98 : 103,2014/15
+,,,,
+19.12. 17:30,NZ Breakers,Townsville,96 : 84,2014/15
+18.12. 19:30,Sydney Kings,Perth Wildcats,78 : 74,2014/15
+14.12. 17:00,Perth Wildcats,Adelaide 36ers,97 : 76,2014/15
+14.12. 14:00,Melbourne United,NZ Breakers,87 : 92,2014/15
+13.12. 19:30,Illawarra Hawks,Sydney Kings,82 : 77,2014/15
+12.12. 20:30,Cairns Taipans,Townsville,77 : 61,2014/15
+12.12. 20:00,Adelaide 36ers,Melbourne United,90 : 77,2014/15
+11.12. 17:30,NZ Breakers,Perth Wildcats,77 : 66,2014/15
+07.12. 14:00,Melbourne United,Townsville,83 : 79,2014/15
+06.12. 20:30,Cairns Taipans,Adelaide 36ers,85 : 80,2014/15
+06.12. 19:30,Sydney Kings,NZ Breakers,82 : 69,2014/15
+05.12. 21:30,Perth Wildcats,Illawarra Hawks,79 : 55,2014/15
+05.12. 20:30,Townsville,Adelaide 36ers,96 : 84,2014/15
+30.11. 17:00,Cairns Taipans,Townsville,91 : 82,2014/15
+30.11. 14:00,Adelaide 36ers,Sydney Kings,83 : 90,2014/15
+28.11. 21:30,Perth Wildcats,Cairns Taipans,84 : 66,2014/15
+28.11. 19:30,Illawarra Hawks,Townsville,90 : 76,2014/15
+28.11. 17:30,NZ Breakers,Sydney Kings,107 : 96,2014/15
+27.11. 19:00,Melbourne United,Adelaide 36ers,94 : 91,2014/15
+23.11. 20:30,Townsville,Illawarra Hawks,107 : 75,2014/15
+23.11. 14:00,Melbourne United,Perth Wildcats,91 : 76,2014/15
+22.11. 20:30,Cairns Taipans,Illawarra Hawks,69 : 65,2014/15
+21.11. 20:00,Adelaide 36ers,Perth Wildcats,74 : 84,2014/15
+21.11. 17:30,NZ Breakers,Melbourne United,80 : 72,2014/15
+20.11. 19:30,Sydney Kings,Cairns Taipans,93 : 76,2014/15
+16.11. 14:00,Sydney Kings,Perth Wildcats,66 : 85,2014/15
+15.11. 20:00,Adelaide 36ers,Melbourne United,79 : 118,2014/15
+14.11. 21:30,Perth Wildcats,Townsville,93 : 78,2014/15
+14.11. 17:30,NZ Breakers,Illawarra Hawks,71 : 55,2014/15
+12.11. 19:00,Melbourne United,Cairns Taipans,91 : 76,2014/15
+09.11. 17:00,Perth Wildcats,Melbourne United,68 : 59,2014/15
+09.11. 17:00,Townsville,NZ Breakers,80 : 87,2014/15
+09.11. 14:00,Sydney Kings,Adelaide 36ers,107 : 100,2014/15
+07.11. 20:30,Cairns Taipans,NZ Breakers,71 : 79,2014/15
+07.11. 19:30,Illawarra Hawks,Sydney Kings,53 : 82,2014/15
+02.11. 17:00,Townsville,Perth Wildcats,102 : 80,2014/15
+02.11. 14:00,Adelaide 36ers,NZ Breakers,93 : 86,2014/15
+02.11. 14:00,Melbourne United,Illawarra Hawks,88 : 75,2014/15
+01.11. 20:30,Cairns Taipans,Sydney Kings,74 : 62,2014/15
+31.10. 19:30,Illawarra Hawks,Perth Wildcats,64 : 83,2014/15
+31.10. 17:30,NZ Breakers,Townsville,84 : 70,2014/15
+26.10. 14:00,Illawarra Hawks,NZ Breakers,77 : 79,2014/15
+25.10. 20:30,Townsville,Melbourne United,92 : 81,2014/15
+24.10. 21:30,Perth Wildcats,Sydney Kings,84 : 63,2014/15
+23.10. 20:00,Adelaide 36ers,Illawarra Hawks,94 : 73,2014/15
+23.10. 17:30,NZ Breakers,Cairns Taipans,76 : 85,2014/15
+19.10. 17:00,Illawarra Hawks,Cairns Taipans,89 : 91,2014/15
+19.10. 14:00,Melbourne United,NZ Breakers,95 : 74,2014/15
+17.10. 21:30,Perth Wildcats,Illawarra Hawks,69 : 59,2014/15
+17.10. 20:30,Cairns Taipans,Melbourne United,88 : 73,2014/15
+17.10. 19:30,Sydney Kings,Townsville,81 : 86,2014/15
+17.10. 17:30,NZ Breakers,Adelaide 36ers,101 : 80,2014/15
+12.10. 17:00,Townsville,Adelaide 36ers,83 : 97,2014/15
+12.10. 14:00,Melbourne United,Cairns Taipans,61 : 89,2014/15
+11.10. 19:30,Sydney Kings,Illawarra Hawks,86 : 83,2014/15
+10.10. 21:30,Perth Wildcats,NZ Breakers,70 : 80,2014/15
+10.10. 20:00,Adelaide 36ers,Cairns Taipans,87 : 97,2014/15
+10.10. 19:30,Illawarra Hawks,Townsville,92 : 83,2014/15
+06.03. 17:30,Perth Wildcats ,NZ Breakers,75 : 52,2015/16
+04.03. 17:30,NZ Breakers,Perth Wildcats,72 : 68,2015/16
+02.03. 21:30,Perth Wildcats,NZ Breakers,82 : 76,2015/16
+26.02. 21:30,Perth Wildcats ,Illawarra Hawks,89 : 74,2015/16
+21.02. 15:00,Illawarra Hawks,Perth Wildcats,104 : 87,2015/16
+20.02. 17:30,NZ Breakers ,Melbourne United,91 : 78,2015/16
+19.02. 21:30,Perth Wildcats,Illawarra Hawks,80 : 68,2015/16
+18.02. 19:30,Melbourne United,NZ Breakers,82 : 91,2015/16
+14.02. 19:00,Perth Wildcats,Adelaide 36ers,100 : 84,2015/16
+14.02. 15:00,Melbourne United,NZ Breakers,68 : 70,2015/16
+13.02. 19:30,Townsville,Sydney Kings,126 : 123,2015/16
+,,,,
+12.02. 19:30,Illawarra Hawks,Adelaide 36ers,106 : 95,2015/16
+12.02. 17:30,NZ Breakers,Melbourne United,100 : 63,2015/16
+11.02. 19:30,Townsville,Cairns Taipans,85 : 68,2015/16
+10.02. 19:30,Sydney Kings,Perth Wildcats,103 : 77,2015/16
+07.02. 15:00,NZ Breakers,Cairns Taipans,85 : 74,2015/16
+06.02. 19:30,Illawarra Hawks,Townsville,104 : 97,2015/16
+,,,,
+05.02. 21:30,Perth Wildcats,Sydney Kings,95 : 81,2015/16
+05.02. 19:30,Cairns Taipans,Adelaide 36ers,95 : 89,2015/16
+04.02. 19:30,Illawarra Hawks,Melbourne United,73 : 80,2015/16
+03.02. 19:30,Adelaide 36ers,NZ Breakers,84 : 106,2015/16
+30.01. 19:30,Adelaide 36ers,Illawarra Hawks,104 : 90,2015/16
+29.01. 21:30,Perth Wildcats,Melbourne United,85 : 91,2015/16
+,,,,
+29.01. 19:30,Cairns Taipans,Sydney Kings,81 : 76,2015/16
+29.01. 17:30,NZ Breakers,Townsville,77 : 74,2015/16
+28.01. 19:30,Illawarra Hawks,Adelaide 36ers,104 : 97,2015/16
+27.01. 19:30,Townsville,Sydney Kings,96 : 88,2015/16
+25.01. 21:30,Perth Wildcats,Cairns Taipans,84 : 74,2015/16
+23.01. 19:30,Cairns Taipans,NZ Breakers,90 : 87,2015/16
+22.01. 19:30,Adelaide 36ers,Melbourne United,90 : 81,2015/16
+21.01. 21:30,Perth Wildcats,Illawarra Hawks,95 : 72,2015/16
+21.01. 19:30,Townsville,NZ Breakers,89 : 66,2015/16
+20.01. 19:30,Adelaide 36ers,Sydney Kings,96 : 89,2015/16
+17.01. 15:00,NZ Breakers,Illawarra Hawks,96 : 103,2015/16
+,,,,
+16.01. 19:30,Townsville,Adelaide 36ers,103 : 108,2015/16
+15.01. 21:30,Perth Wildcats,Sydney Kings,95 : 68,2015/16
+15.01. 19:30,Melbourne United,Cairns Taipans,98 : 68,2015/16
+14.01. 19:30,Illawarra Hawks,NZ Breakers,87 : 69,2015/16
+13.01. 19:30,Cairns Taipans,Melbourne United,65 : 83,2015/16
+09.01. 19:30,Sydney Kings,Illawarra Hawks,90 : 114,2015/16
+08.01. 19:30,Cairns Taipans,Townsville,75 : 61,2015/16
+08.01. 17:30,NZ Breakers,Adelaide 36ers,81 : 87,2015/16
+07.01. 19:30,Melbourne United,Illawarra Hawks,97 : 96,2015/16
+06.01. 19:30,Cairns Taipans,Perth Wildcats,71 : 61,2015/16
+02.01. 19:30,Sydney Kings,Cairns Taipans,87 : 77,2015/16
+31.12. 19:30,Cairns Taipans,NZ Breakers,73 : 66,2015/16
+31.12. 19:30,Townsville,Illawarra Hawks,74 : 98,2015/16
+30.12. 19:30,Sydney Kings,Melbourne United,90 : 100,2015/16
+27.12. 19:00,Melbourne United,Perth Wildcats,92 : 87,2015/16
+27.12. 15:00,Sydney Kings,NZ Breakers,83 : 93,2015/16
+23.12. 19:30,Adelaide 36ers,Melbourne United,91 : 81,2015/16
+20.12. 15:00,NZ Breakers,Illawarra Hawks,83 : 107,2015/16
+19.12. 19:30,Townsville,Perth Wildcats,75 : 58,2015/16
+18.12. 19:30,Illawarra Hawks,Sydney Kings,102 : 83,2015/16
+17.12. 19:30,Cairns Taipans,Perth Wildcats,70 : 73,2015/16
+16.12. 19:30,Melbourne United,Sydney Kings,81 : 96,2015/16
+13.12. 15:00,Sydney Kings,Perth Wildcats,69 : 87,2015/16
+12.12. 19:30,Adelaide 36ers,Townsville,76 : 66,2015/16
+11.12. 19:30,Cairns Taipans,Illawarra Hawks,103 : 101,2015/16
+,,,,
+11.12. 17:30,NZ Breakers,Sydney Kings,96 : 84,2015/16
+10.12. 21:30,Perth Wildcats,Melbourne United,113 : 83,2015/16
+10.12. 19:30,Townsville,Adelaide 36ers,101 : 100,2015/16
+09.12. 19:30,Illawarra Hawks,Cairns Taipans,97 : 82,2015/16
+06.12. 15:00,Melbourne United,Adelaide 36ers,89 : 86,2015/16
+05.12. 19:30,Townsville,NZ Breakers,75 : 86,2015/16
+04.12. 21:30,Perth Wildcats,Adelaide 36ers,90 : 72,2015/16
+04.12. 19:30,Cairns Taipans,Sydney Kings,101 : 83,2015/16
+03.12. 19:30,Illawarra Hawks,Melbourne United,102 : 87,2015/16
+02.12. 19:30,Townsville,Cairns Taipans,90 : 76,2015/16
+02.12. 17:30,NZ Breakers,Perth Wildcats,99 : 78,2015/16
+28.11. 19:30,Illawarra Hawks,Townsville,108 : 70,2015/16
+27.11. 21:30,Perth Wildcats,NZ Breakers,86 : 80,2015/16
+27.11. 19:30,Cairns Taipans,Adelaide 36ers,83 : 88,2015/16
+26.11. 19:30,Townsville,Melbourne United,63 : 66,2015/16
+25.11. 19:30,Illawarra Hawks,Sydney Kings,96 : 90,2015/16
+22.11. 19:00,Perth Wildcats,Cairns Taipans,91 : 90,2015/16
+22.11. 15:00,NZ Breakers,Melbourne United,80 : 69,2015/16
+21.11. 19:30,Adelaide 36ers,Illawarra Hawks,89 : 77,2015/16
+20.11. 19:30,Melbourne United,Townsville,78 : 82,2015/16
+19.11. 19:30,Sydney Kings,NZ Breakers,74 : 86,2015/16
+18.11. 19:30,Adelaide 36ers,Perth Wildcats,88 : 94,2015/16
+14.11. 19:30,Adelaide 36ers,Townsville,89 : 65,2015/16
+13.11. 19:30,Cairns Taipans,Melbourne United,82 : 70,2015/16
+13.11. 17:30,NZ Breakers,Perth Wildcats,88 : 80,2015/16
+12.11. 19:30,Sydney Kings,Adelaide 36ers,106 : 84,2015/16
+11.11. 19:30,Illawarra Hawks,Perth Wildcats,96 : 99,2015/16
+08.11. 15:00,Melbourne United,NZ Breakers,87 : 86,2015/16
+07.11. 19:30,Adelaide 36ers,Sydney Kings,99 : 98,2015/16
+06.11. 21:30,Perth Wildcats,Townsville,85 : 77,2015/16
+06.11. 19:30,Illawarra Hawks,Cairns Taipans,96 : 88,2015/16
+05.11. 19:30,Sydney Kings,Melbourne United,94 : 105,2015/16
+05.11. 17:30,NZ Breakers,Adelaide 36ers,98 : 88,2015/16
+04.11. 19:30,Townsville,Perth Wildcats,89 : 77,2015/16
+01.11. 15:00,Melbourne United,Sydney Kings,96 : 82,2015/16
+31.10. 21:30,Perth Wildcats,Illawarra Hawks,91 : 62,2015/16
+31.10. 19:30,Adelaide 36ers,Cairns Taipans,101 : 104,2015/16
+30.10. 19:30,Sydney Kings,Townsville,87 : 78,2015/16
+29.10. 19:30,Melbourne United,Perth Wildcats,75 : 73,2015/16
+28.10. 19:30,Townsville,Illawarra Hawks,88 : 96,2015/16
+28.10. 17:30,NZ Breakers,Cairns Taipans,90 : 67,2015/16
+25.10. 15:00,Illawarra Hawks,Perth Wildcats,99 : 106,2015/16
+24.10. 19:30,Melbourne United,Cairns Taipans,89 : 80,2015/16
+23.10. 21:30,Perth Wildcats,Townsville,63 : 66,2015/16
+23.10. 19:30,Sydney Kings,Adelaide 36ers,80 : 91,2015/16
+22.10. 19:30,Adelaide 36ers,Cairns Taipans,88 : 79,2015/16
+21.10. 19:30,Melbourne United,Townsville,93 : 62,2015/16
+21.10. 17:30,NZ Breakers,Sydney Kings,74 : 62,2015/16
+17.10. 19:30,Cairns Taipans,Townsville,80 : 74,2015/16
+17.10. 17:30,Sydney Kings,Illawarra Hawks,86 : 100,2015/16
+16.10. 21:30,Perth Wildcats,NZ Breakers,83 : 80,2015/16
+16.10. 19:30,Melbourne United,Adelaide 36ers,84 : 75,2015/16
+15.10. 19:30,Sydney Kings,Townsville,77 : 80,2015/16
+14.10. 19:30,Illawarra Hawks,NZ Breakers,96 : 75,2015/16
+11.10. 15:00,Melbourne United,Illawarra Hawks,93 : 81,2015/16
+11.10. 13:00,NZ Breakers,Townsville,89 : 81,2015/16
+10.10. 19:30,Adelaide 36ers,Perth Wildcats,66 : 79,2015/16
+10.10. 17:30,Sydney Kings,Cairns Taipans,87 : 63,2015/16
+09.10. 19:30,Townsville,Melbourne United,84 : 99,2015/16
+08.10. 19:30,Cairns Taipans,Illawarra Hawks,79 : 74,2015/16
+05.03. 15:00,Perth Wildcats ,Illawarra Hawks,95 : 86,2016//17
+01.03. 19:30,Illawarra Hawks,Perth Wildcats,77 : 89,2016//17
+26.02. 19:00,Perth Wildcats,Illawarra Hawks,89 : 77,2016//17
+23.02. 19:30,Adelaide 36ers,Illawarra Hawks ,98 : 106,2016//17
+20.02. 21:30,Perth Wildcats ,Cairns Taipans,74 : 66,2016//17
+19.02. 15:00,Illawarra Hawks,Adelaide 36ers,100 : 94,2016//17
+17.02. 19:30,Cairns Taipans,Perth Wildcats,69 : 91,2016//17
+16.02. 19:30,Adelaide 36ers,Illawarra Hawks,93 : 78,2016//17
+12.02. 15:00,Melbourne United,Perth Wildcats,94 : 96,2016//17
+11.02. 19:30,Adelaide 36ers,Cairns Taipans,89 : 98,2016//17
+11.02. 17:30,Illawarra Hawks,Brisbane Bullets,106 : 79,2016//17
+10.02. 21:30,Perth Wildcats,Sydney Kings,101 : 74,2016//17
+10.02. 17:30,NZ Breakers,Melbourne United,88 : 70,2016//17
+09.02. 19:30,Cairns Taipans,Adelaide 36ers,89 : 85,2016//17
+06.02. 19:30,Melbourne United,Illawarra Hawks,78 : 72,2016//17
+05.02. 15:00,Cairns Taipans,Perth Wildcats,85 : 77,2016//17
+04.02. 19:30,Sydney Kings,Melbourne United,76 : 89,2016//17
+04.02. 17:30,Adelaide 36ers,NZ Breakers,87 : 88,2016//17
+03.02. 21:30,Perth Wildcats,Brisbane Bullets,94 : 63,2016//17
+03.02. 19:30,Illawarra Hawks,Cairns Taipans,90 : 73,2016//17
+29.01. 19:00,Cairns Taipans,Brisbane Bullets,97 : 83,2016//17
+29.01. 15:00,Sydney Kings,NZ Breakers,84 : 57,2016//17
+28.01. 21:30,Perth Wildcats,Melbourne United,73 : 71,2016//17
+28.01. 19:30,Illawarra Hawks,Adelaide 36ers,95 : 92,2016//17
+27.01. 19:30,Brisbane Bullets,Sydney Kings,77 : 80,2016//17
+26.01. 17:30,NZ Breakers,Cairns Taipans,81 : 94,2016//17
+22.01. 17:00,NZ Breakers,Perth Wildcats,86 : 82,2016//17
+22.01. 15:00,Cairns Taipans,Illawarra Hawks,85 : 79,2016//17
+21.01. 19:30,Adelaide 36ers,Sydney Kings,87 : 73,2016//17
+21.01. 17:30,Brisbane Bullets,Melbourne United,88 : 71,2016//17
+20.01. 21:30,Perth Wildcats,Cairns Taipans,84 : 78,2016//17
+,,,,2016//17
+20.01. 19:30,Illawarra Hawks,NZ Breakers,86 : 95,2016//17
+19.01. 19:30,Adelaide 36ers,Brisbane Bullets,101 : 68,2016//17
+16.01. 19:30,Cairns Taipans,Perth Wildcats,80 : 78,2016//17
+15.01. 15:00,Brisbane Bullets,NZ Breakers,82 : 84,2016//17
+14.01. 21:30,Perth Wildcats,Adelaide 36ers,84 : 95,2016//17
+14.01. 19:30,Melbourne United,Cairns Taipans,92 : 85,2016//17
+13.01. 19:30,Illawarra Hawks,Brisbane Bullets,85 : 80,2016//17
+13.01. 17:30,NZ Breakers,Sydney Kings,92 : 74,2016//17
+12.01. 19:30,Adelaide 36ers,Melbourne United,100 : 73,2016//17
+09.01. 19:30,Brisbane Bullets,Perth Wildcats,68 : 72,2016//17
+08.01. 15:00,NZ Breakers,Adelaide 36ers,95 : 113,2016//17
+07.01. 19:30,Sydney Kings,Perth Wildcats,74 : 80,2016//17
+07.01. 17:30,Illawarra Hawks,Melbourne United,106 : 88,2016//17
+06.01. 19:30,Cairns Taipans,NZ Breakers,65 : 63,2016//17
+05.01. 19:35,Adelaide 36ers,Illawarra Hawks,117 : 85,2016//17
+01.01. 15:00,Melbourne United,Adelaide 36ers,104 : 73,2016//17
+31.12. 19:30,Brisbane Bullets,Cairns Taipans,93 : 76,2016//17
+31.12. 17:30,Illawarra Hawks,Perth Wildcats,87 : 95,2016//17
+30.12. 19:30,Sydney Kings,NZ Breakers,85 : 80,2016//17
+29.12. 19:30,Cairns Taipans,Melbourne United,78 : 79,2016//17
+26.12. 19:30,Melbourne United,Brisbane Bullets,97 : 59,2016//17
+23.12. 19:30,Sydney Kings,Illawarra Hawks,75 : 87,2016//17
+22.12. 19:30,Adelaide 36ers,Perth Wildcats,78 : 74,2016//17
+19.12. 19:30,Brisbane Bullets,Illawarra Hawks,85 : 91,2016//17
+,,,,2016//17
+18.12. 15:00,Sydney Kings,Adelaide 36ers,96 : 103,2016//17
+17.12. 19:30,Brisbane Bullets,Melbourne United,100 : 90,2016//17
+17.12. 17:30,Cairns Taipans,Illawarra Hawks,99 : 82,2016//17
+16.12. 19:30,Adelaide 36ers,Sydney Kings,82 : 80,2016//17
+15.12. 17:30,NZ Breakers,Perth Wildcats,69 : 57,2016//17
+12.12. 19:30,Cairns Taipans,Adelaide 36ers,83 : 96,2016//17
+11.12. 15:00,Sydney Kings,Melbourne United,81 : 88,2016//17
+10.12. 19:30,Brisbane Bullets,Illawarra Hawks,88 : 98,2016//17
+10.12. 17:30,Adelaide 36ers,NZ Breakers,102 : 92,2016//17
+09.12. 21:30,Perth Wildcats,Melbourne United,92 : 89,2016//17
+09.12. 19:30,Cairns Taipans,Sydney Kings,78 : 86,2016//17
+08.12. 17:30,NZ Breakers,Brisbane Bullets,82 : 75,2016//17
+05.12. 19:30,Illawarra Hawks,Sydney Kings,93 : 99,2016//17
+04.12. 15:00,Melbourne United,NZ Breakers,98 : 74,2016//17
+03.12. 19:40,Adelaide 36ers,Perth Wildcats,92 : 86,2016//17
+,,,,2016//17
+03.12. 17:30,Brisbane Bullets,Cairns Taipans,84 : 89,2016//17
+02.12. 17:30,NZ Breakers,Illawarra Hawks,91 : 95,2016//17
+01.12. 21:30,Perth Wildcats,Brisbane Bullets,75 : 90,2016//17
+28.11. 19:30,Sydney Kings,Adelaide 36ers,85 : 91,2016//17
+27.11. 19:00,Perth Wildcats,Illawarra Hawks,85 : 89,2016//17
+27.11. 15:00,Cairns Taipans,NZ Breakers,91 : 80,2016//17
+26.11. 19:30,Melbourne United,Sydney Kings,95 : 92,2016//17
+24.11. 19:30,Brisbane Bullets,Adelaide 36ers,83 : 101,2016//17
+20.11. 15:00,Illawarra Hawks,NZ Breakers,109 : 78,2016//17
+19.11. 19:30,Sydney Kings,Perth Wildcats,83 : 72,2016//17
+19.11. 17:30,Adelaide 36ers,Brisbane Bullets,87 : 105,2016//17
+18.11. 19:30,Melbourne United,Cairns Taipans,84 : 79,2016//17
+18.11. 17:30,NZ Breakers,Illawarra Hawks,100 : 85,2016//17
+17.11. 21:30,Perth Wildcats,Sydney Kings,93 : 80,2016//17
+13.11. 19:00,Perth Wildcats,NZ Breakers,86 : 87,2016//17
+,,,,2016//17
+13.11. 15:00,Cairns Taipans,Brisbane Bullets,76 : 84,2016//17
+12.11. 19:30,Melbourne United,Sydney Kings,71 : 87,2016//17
+12.11. 17:30,Adelaide 36ers,Illawarra Hawks,74 : 85,2016//17
+11.11. 17:30,NZ Breakers,Cairns Taipans,79 : 86,2016//17
+10.11. 19:30,Brisbane Bullets,Sydney Kings,86 : 73,2016//17
+07.11. 19:30,Sydney Kings,Cairns Taipans,79 : 77,2016//17
+06.11. 15:00,Illawarra Hawks,Melbourne United,82 : 73,2016//17
+06.11. 13:00,NZ Breakers,Brisbane Bullets,86 : 70,2016//17
+05.11. 21:30,Perth Wildcats,Adelaide 36ers,106 : 103,2016//17
+05.11. 19:30,Cairns Taipans,Sydney Kings,64 : 57,2016//17
+04.11. 19:30,Melbourne United,NZ Breakers,92 : 98,2016//17
+,,,,2016//17
+30.10. 19:00,Illawarra Hawks,Cairns Taipans,83 : 98,2016//17
+30.10. 15:00,Sydney Kings,Brisbane Bullets,87 : 78,2016//17
+29.10. 17:30,NZ Breakers,Adelaide 36ers,119 : 93,2016//17
+28.10. 19:30,Illawarra Hawks,Perth Wildcats,81 : 76,2016//17
+27.10. 19:30,Cairns Taipans,Melbourne United,83 : 76,2016//17
+24.10. 19:30,Sydney Kings,Illawarra Hawks,90 : 73,2016//17
+23.10. 15:00,Melbourne United,Perth Wildcats,69 : 72,2016//17
+22.10. 19:30,Brisbane Bullets,NZ Breakers,88 : 82,2016//17
+21.10. 21:30,Perth Wildcats,Illawarra Hawks,80 : 73,2016//17
+21.10. 19:30,Adelaide 36ers,Cairns Taipans,83 : 67,2016//17
+20.10. 19:30,Melbourne United,Brisbane Bullets,78 : 70,2016//17
+20.10. 17:30,NZ Breakers,Sydney Kings,78 : 92,2016//17
+16.10. 19:00,Brisbane Bullets,Adelaide 36ers,93 : 96,2016//17
+,,,,2016//17
+16.10. 15:00,Melbourne United,Illawarra Hawks,95 : 83,2016//17
+15.10. 19:30,Sydney Kings,Cairns Taipans,92 : 78,2016//17
+14.10. 21:30,Perth Wildcats,NZ Breakers,75 : 73,2016//17
+14.10. 19:30,Adelaide 36ers,Melbourne United,87 : 98,2016//17
+13.10. 19:30,Illawarra Hawks,Sydney Kings,84 : 88,2016//17
+09.10. 15:00,Melbourne United,Adelaide 36ers,79 : 87,2016//17
+08.10. 21:30,Perth Wildcats,Cairns Taipans,84 : 74,2016//17
+,,,,2016//17
+08.10. 17:30,Sydney Kings,Brisbane Bullets,73 : 77,2016//17
+07.10. 19:30,Illawarra Hawks,Adelaide 36ers,122 : 88,2016//17
+07.10. 17:30,NZ Breakers,Melbourne United,76 : 71,2016//17
+06.10. 19:30,Brisbane Bullets,Perth Wildcats,72 : 65,2016//17
+31.03. 18:00,Melbourne United ,Adelaide,100 : 82,2017/18
+25.03. 15:00,Adelaide,Melbourne United,90 : 81,2017/18
+23.03. 19:30,Melbourne United,Adelaide,101 : 98,2017/18
+18.03. 15:00,Adelaide,Melbourne United,110 : 95,2017/18
+16.03. 19:30,Melbourne United,Adelaide,107 : 96,2017/18
+09.03. 21:30,Perth,Adelaide ,88 : 89,2017/18
+05.03. 17:30,New Zealand Breakers,Melbourne United ,86 : 88,2017/18
+,,,,2017/18
+03.03. 19:30,Adelaide,Perth,109 : 74,2017/18
+03.03. 17:30,Melbourne United,New Zealand Breakers,88 : 77,2017/18
+18.02. 19:00,Perth,Cairns,89 : 61,2017/18
+18.02. 17:00,Sydney,New Zealand Breakers,101 : 86,2017/18
+18.02. 15:00,Melbourne United,Illawarra Hawks,84 : 94,2017/18
+17.02. 17:30,Adelaide,Brisbane Bullets,105 : 82,2017/18
+16.02. 19:30,Melbourne United,Perth,97 : 85,2017/18
+16.02. 17:30,New Zealand Breakers,Illawarra Hawks,82 : 84,2017/18
+15.02. 19:30,Brisbane Bullets,Sydney,73 : 90,2017/18
+11.02. 15:00,Illawarra Hawks,Adelaide,87 : 111,2017/18
+11.02. 13:00,New Zealand Breakers,Melbourne United,82 : 100,2017/18
+10.02. 17:30,Sydney,Brisbane Bullets,92 : 80,2017/18
+09.02. 21:30,Perth,Cairns,83 : 85,2017/18
+09.02. 19:30,Melbourne United,New Zealand Breakers,89 : 83,2017/18
+08.02. 19:30,Brisbane Bullets,Illawarra Hawks,99 : 91,2017/18
+04.02. 15:00,Adelaide,Perth,94 : 82,2017/18
+04.02. 13:00,New Zealand Breakers,Illawarra Hawks,88 : 84,2017/18
+03.02. 19:30,Cairns,Sydney,86 : 93,2017/18
+03.02. 17:30,Melbourne United,Brisbane Bullets,69 : 61,2017/18
+02.02. 21:30,Perth,Adelaide,111 : 90,2017/18
+02.02. 19:30,Illawarra Hawks,New Zealand Breakers,73 : 77,2017/18
+28.01. 17:00,Illawarra Hawks,Cairns,88 : 78,2017/18
+28.01. 15:00,Sydney,Melbourne United,76 : 93,2017/18
+27.01. 20:30,Perth,New Zealand Breakers,90 : 73,2017/18
+27.01. 17:30,Brisbane Bullets,Adelaide,95 : 90,2017/18
+24.01. 19:30,Melbourne United,Cairns,79 : 68,2017/18
+21.01. 17:00,Illawarra Hawks,Adelaide,93 : 112,2017/18
+21.01. 15:00,Sydney,Perth,84 : 56,2017/18
+20.01. 19:30,Cairns,New Zealand Breakers,81 : 71,2017/18
+20.01. 17:30,Brisbane Bullets,Melbourne United,95 : 103,2017/18
+19.01. 21:30,Perth,Sydney,77 : 84,2017/18
+19.01. 19:30,Adelaide,Illawarra Hawks,112 : 90,2017/18
+18.01. 17:30,New Zealand Breakers,Melbourne United,98 : 81,2017/18
+14.01. 15:00,Brisbane Bullets,Perth,80 : 81,2017/18
+13.01. 19:30,Illawarra Hawks,New Zealand Breakers,90 : 79,2017/18
+13.01. 17:30,Sydney,Adelaide,101 : 104,2017/18
+12.01. 21:30,Perth,Melbourne United,80 : 82,2017/18
+11.01. 19:30,Adelaide,Cairns,100 : 90,2017/18
+07.01. 15:00,Brisbane Bullets,Adelaide,84 : 95,2017/18
+,,,,2017/18
+07.01. 13:00,New Zealand Breakers,Cairns,82 : 69,2017/18
+06.01. 19:30,Illawarra Hawks,Melbourne United,77 : 79,2017/18
+06.01. 17:30,Sydney,Perth,68 : 76,2017/18
+05.01. 19:30,Cairns,Brisbane Bullets,83 : 80,2017/18
+04.01. 19:30,Adelaide,Perth,97 : 86,2017/18
+31.12. 19:00,Cairns,Perth,68 : 83,2017/18
+31.12. 15:00,Illawarra Hawks,Brisbane Bullets,104 : 82,2017/18
+30.12. 17:30,Sydney,Melbourne United,79 : 103,2017/18
+29.12. 19:30,Adelaide,New Zealand Breakers,88 : 85,2017/18
+28.12. 19:30,Illawarra Hawks,Cairns,106 : 102,2017/18
+26.12. 19:30,Melbourne United,Brisbane Bullets,69 : 68,2017/18
+24.12. 15:00,Adelaide,Cairns,75 : 94,2017/18
+23.12. 19:30,Illawarra Hawks,Perth,96 : 84,2017/18
+23.12. 17:30,Brisbane Bullets,Sydney,95 : 101,2017/18
+22.12. 19:30,Melbourne United,Adelaide,99 : 91,2017/18
+21.12. 19:30,Sydney,New Zealand Breakers,95 : 98,2017/18
+17.12. 15:00,Sydney,Cairns,88 : 69,2017/18
+16.12. 19:30,Illawarra Hawks,Melbourne United,78 : 84,2017/18
+16.12. 17:30,Perth,Brisbane Bullets,76 : 82,2017/18
+15.12. 17:30,New Zealand Breakers,Adelaide,75 : 90,2017/18
+14.12. 19:30,Cairns,Brisbane Bullets,74 : 75,2017/18
+11.12. 19:30,Melbourne United,Sydney,95 : 69,2017/18
+10.12. 17:00,Adelaide,New Zealand Breakers,95 : 92,2017/18
+10.12. 15:00,Illawarra Hawks,Perth,91 : 99,2017/18
+09.12. 19:30,Cairns,Melbourne United,79 : 70,2017/18
+09.12. 17:30,Sydney,Brisbane Bullets,77 : 85,2017/18
+08.12. 21:30,Perth,Adelaide,88 : 79,2017/18
+07.12. 17:30,New Zealand Breakers,Brisbane Bullets,96 : 89,2017/18
+04.12. 19:30,Melbourne United,Illawarra Hawks,91 : 73,2017/18
+03.12. 15:00,Brisbane Bullets,New Zealand Breakers,81 : 76,2017/18
+02.12. 17:30,Cairns,Sydney,80 : 71,2017/18
+01.12. 19:30,Adelaide,Brisbane Bullets,84 : 83,2017/18
+01.12. 17:30,New Zealand Breakers,Perth,73 : 89,2017/18
+30.11. 19:30,Sydney,Cairns,81 : 72,2017/18
+19.11. 15:00,Melbourne United,Perth,59 : 91,2017/18
+19.11. 13:00,New Zealand Breakers,Brisbane Bullets,90 : 82,2017/18
+18.11. 19:30,Cairns,Illawarra Hawks,87 : 66,2017/18
+18.11. 17:30,Adelaide,Sydney,108 : 93,2017/18
+17.11. 19:30,Brisbane Bullets,Perth,85 : 90,2017/18
+16.11. 19:30,Illawarra Hawks,Sydney,97 : 93,2017/18
+,,,,2017/18
+12.11. 19:00,Perth,New Zealand Breakers,82 : 88,2017/18
+12.11. 15:00,Brisbane Bullets,Cairns,82 : 74,2017/18
+11.11. 19:30,Adelaide,Illawarra Hawks,87 : 96,2017/18
+11.11. 17:30,Melbourne United,Sydney,108 : 90,2017/18
+09.11. 19:30,Cairns,Melbourne United,92 : 69,2017/18
+09.11. 17:30,New Zealand Breakers,Perth,88 : 84,2017/18
+05.11. 15:00,Sydney,Illawarra Hawks,83 : 93,2017/18
+04.11. 19:30,Cairns,New Zealand Breakers,70 : 73,2017/18
+04.11. 17:30,Melbourne United,Adelaide,101 : 84,2017/18
+03.11. 21:30,Perth,Sydney,93 : 69,2017/18
+03.11. 19:30,Brisbane Bullets,Illawarra Hawks,81 : 112,2017/18
+02.11. 19:30,Melbourne United,Cairns,87 : 65,2017/18
+02.11. 17:30,New Zealand Breakers,Adelaide,92 : 88,2017/18
+29.10. 15:00,Illawarra Hawks,Sydney,94 : 99,2017/18
+,,,,2017/18
+28.10. 17:30,Brisbane Bullets,Melbourne United,87 : 85,2017/18
+27.10. 19:30,Cairns,Adelaide,80 : 84,2017/18
+26.10. 21:30,Perth,Illawarra Hawks,105 : 74,2017/18
+26.10. 19:30,Brisbane Bullets,New Zealand Breakers,96 : 101,2017/18
+22.10. 19:00,Cairns,Perth,90 : 69,2017/18
+22.10. 17:00,Illawarra Hawks,Brisbane Bullets,105 : 96,2017/18
+22.10. 15:00,Melbourne United,New Zealand Breakers,76 : 88,2017/18
+21.10. 17:30,Adelaide,Sydney,114 : 84,2017/18
+20.10. 21:30,Perth,Melbourne United,89 : 84,2017/18
+20.10. 19:30,Brisbane Bullets,Cairns,83 : 78,2017/18
+19.10. 17:30,New Zealand Breakers,Sydney,90 : 73,2017/18
+15.10. 15:00,Sydney,Illawarra Hawks,103 : 87,2017/18
+14.10. 17:30,Adelaide,Melbourne United,79 : 99,2017/18
+13.10. 21:30,Perth,Illawarra Hawks,74 : 64,2017/18
+13.10. 17:30,New Zealand Breakers,Sydney,87 : 85,2017/18
+12.10. 19:30,Cairns,Adelaide,70 : 96,2017/18
+08.10. 15:00,New Zealand Breakers,Cairns,71 : 82,2017/18
+07.10. 20:30,Perth,Brisbane Bullets,96 : 86,2017/18
+07.10. 17:30,Sydney,Adelaide,96 : 105,2017/18
+06.10. 19:30,Cairns,Illawarra Hawks,88 : 87,2017/18
+05.10. 19:30,Adelaide,Melbourne United,97 : 99,2017/18
