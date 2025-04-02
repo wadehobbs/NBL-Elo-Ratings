@@ -1,7 +1,7 @@
 ---
 title: "NBL Elo Ratings with Shiny App in R"
 output: html_document
-date: "2025-04-02"
+
 ---
 
 The 2018/19 NBL season gets underway soon so I thought I’d have a crack at some Elo ratings. This was a learning exercise for me – NBL elo information already exists. For example this site:
