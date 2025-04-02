@@ -1,0 +1,263 @@
+---
+title: "NBL Elo Ratings with Shiny App in R"
+output: html_document
+date: "2025-04-02"
+---
+
+The 2018/19 NBL season gets underway soon so I thought I’d have a crack at some Elo ratings. This was a learning exercise for me – NBL elo information already exists. For example this site:
+http://www.aussportstipping.com/sports/nbl/elo_ratings/
+has extensive NBL elo info using numerous variations of the rating measure as well as comprehensive details on how they were calculated. But I wanted to learn how the rating system works and create a simple shiny app to visualise the results.
+ 
+I hope this post can serve as an educational resource for those wanting to make elo ratings in R. It includes the following:
+
+* Collecting and cleaning the data
+* Standard Elo ratings
+* Elo with home court advantage
+* Elo with home court advantage and margin of victory multiplier
+ 
+What the post doesn’t include:
+
+* Using elo to make predictions – I may update to include this closer to the season
+* Explanation of what elo ratings are (though I will include some helpful resources)
+* Walk-through of how to make a shiny app (again, I will include the resources I used)
+ 
+The data and R code I used for this post can be found here:
+https://github.com/wadehobbs/NBL-Elo-Ratings
+If you’re only interested in the elo calculations, skip the data collection and cleaning sections.
+ 
+Lets get started.
+
+
+## Data Collection
+
+I had a crack at web scraping the data using the rvest package but my lack of html coding skills made it difficult beyond the time I was willing to invest. So I copy/pasted results from this website:
+https://www.flashscore.com/basketball/australia/nbl/archive/ straight into Excel. I added the season column in Excel but didn’t end up using it.
+
+## Data Cleaning
+
+This was mostly a straight forward process, with one annoying step (which I will get to).
+First load the packages and import the data (I keep the data file in the working directory for ease of use).
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+####----Cleaning and manipulating data----####
+library(tidyverse)
+library(lubridate)
+
+#Import data
+nbl_db <- read_csv("raw_nbl_data.csv")
+#Delete incomplete rows
+nbl_db <- nbl_db[complete.cases(nbl_db),]
+head(nbl_db)
+
+```
+
+As you can see, the Date column has date and time together and the date is missing the year; and the Score column contains both team's scores. This will need to be fixed so further calculations can be made on the scores and so we can order the database by date.
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+#Clean: separate the score and date columns 
+nbl_db <- separate(nbl_db, Score, into = c("Home_Score", "Away_Score"), sep = "\\:", remove = TRUE)
+nbl_db <- separate(nbl_db, Date, into = c("Date", "Time"), sep = "\\. ", remove = TRUE)
+
+#When splitting the score col the away score had a space in front of the score
+#This meant I couldn't convert it to numeric so needed to trim the space
+#A couple of the team names ended up with spaces at the end of the string, causing problems, so this was fixed
+nbl_db$Away_Score <- str_trim(nbl_db$Away_Score, "left")
+nbl_db$Home <- str_trim(nbl_db$Home, "right")
+nbl_db$Away <- str_trim(nbl_db$Away, "right")
+
+#Make sure scores are numeric data
+nbl_db$Home_Score <- parse_number(nbl_db$Home_Score)
+nbl_db$Away_Score <- parse_number(nbl_db$Away_Score)
+
+```
+
+Despite the data coming from the same website, it contained inconsistencies in the names of teams, so this needed to be fixed.
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+#Fix inconsistency in names
+#Subset all rows that equal the string and give it a different name
+nbl_db$Home[nbl_db$Home == "Adelaide"] <- "Adelaide 36ers"
+nbl_db$Home[nbl_db$Home == "Sydney"] <- "Sydney Kings"
+nbl_db$Home[nbl_db$Home == "Perth"] <- "Perth Wildcats"
+nbl_db$Home[nbl_db$Home == "New Zealand Breakers"] <- "NZ Breakers"
+nbl_db$Home[nbl_db$Home == "Cairns"] <- "Cairns Taipans"
+nbl_db$Away[nbl_db$Away == "Adelaide"] <- "Adelaide 36ers"
+nbl_db$Away[nbl_db$Away == "Sydney"] <- "Sydney Kings"
+nbl_db$Away[nbl_db$Away == "Perth"] <- "Perth Wildcats"
+nbl_db$Away[nbl_db$Away == "New Zealand Breakers"] <- "NZ Breakers"
+nbl_db$Away[nbl_db$Away == "Cairns"] <- "Cairns Taipans"
+
+```
+
+Bit of a pain, but not too bad. Now it gets real painful. The date value didn't have the year, which probably wasn't a major concern but I couldn't stand for this. So I fixed it manually. After this, save the cleaned data for use with shiny app - note the shiny app creates a new folder in the working directory, so will need to copy/paste the cleaned data into the shiny folder for the app to access it.
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+#Massive pain to get the date column right
+#Assigned a new vector of date values, added the year needed and re-added to database
+date <- nbl_db$Date
+date[1:67] <- sub("$", ".14", date[1:67] )
+date[68:120] <- sub("$", ".13", date[68:120] )
+date[121:169] <- sub("$", ".15", date[121:169] )
+date[170:238] <- sub("$", ".14", date[170:238] )
+date[239:283] <- sub("$", ".16", date[239:283] )
+date[284:357] <- sub("$", ".15", date[284:357] )
+date[358:404] <- sub("$", ".17", date[358:404] )
+date[405:477] <- sub("$", ".16", date[405:477] )
+date[478:528] <- sub("$", ".18", date[478:528] )
+date[529:598] <- sub("$", ".17", date[529:598] )
+
+nbl_db$Date <- date
+nbl_db$Date <- dmy(nbl_db$Date) #Function from lubridate package to convert to date format
+nbl_db <- arrange(nbl_db, Date)
+
+#Save data for use with the shiny app
+write.csv(nbl_db, "cleaned_nbl_db.csv")
+
+```
+
+## Elo Ratings Calculations
+
+### Standard Elo Ratings
+
+As always, a thorough internet search is useful when looking to learn something new. Consequently, I found a blog that detailed how to do elo ratings in R with football (soccer) results. The post includes a summary of what elo ratings are as well as how to make predictions. Great blog in general.
+https://edomt.github.io/Elo-R-WorldCup/
+
+I will recycle some of the code from the blog post, simplify the method used to get standard ratings and extend to show how to include margin of victory. Specifically, the post shows how to get elo ratings using the elo.calc function and a for loop. This is a flexible approach allowing for more complicated calculations (as I will show with the margin of victory calc) but the 'elo' package used in the post provides a function that simplifies the process, meaning no for loop. This uses the elo.run and final.elos functions to do the same job.
+
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+library(elo)
+
+#Set up elo score col (1 for a win, 0.5 for draw, 0 for loss)
+nbl_db <- nbl_db %>%
+        mutate(result = if_else(Home_Score > Away_Score, 1,
+                                if_else(Home_Score == Away_Score, 0.5, 0)))
+#Run elo.run function over data
+#This returns an object of class 'elo.run' - a list which is unusable without modification
+nbl_elo_calcs_std <- elo.run(nbl_db$result ~ nbl_db$Home + nbl_db$Away, data = nbl_db, k = 20)
+
+#Take the elo.run object, sum results using the final.elos function and set as a data frame
+nbl_elo_ratings_std <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs_std))
+
+#Team names are row names so need to set as a variable in data frame
+nbl_elo_ratings_std <- rownames_to_column(nbl_elo_ratings_std, "Teams")
+
+#Arrange in descending order
+nbl_elo_ratings_std <- arrange(nbl_elo_ratings_std, desc(Elo.Ratings))
+
+head(nbl_elo_ratings_std)
+```
+
+### Adjusting for Home Court Advantage
+
+While the standard method is useful for some competitions, professional head-to-head sports such as pro soccer and basketball have an established 'home court advantage' that needs to be considered. This is described in detail in this FiveThirtyEight article (a great resource for elo ratings):
+https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/
+
+It establishes the k value at 20. K value is a vital consideration, I have used 20 as is applied to NBA ratings, but the shiny app at the end of the post allows the user to change k and see how it effects the elo ratings. The above article also sets home court advantage at 100 'elo points', which equates to 3-4 points in a basketball game. In the interests of time, I used this in my calculations rather than working out exactly what it should be for the NBL competition. Notice the adjust () function used on the Home values. The rest of the code is the same as the previous standard calculation.
+
+
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+#Elo adjusted for home court advantage
+nbl_elo_calcs_adj4hc <- elo.run(nbl_db$result ~ adjust(nbl_db$Home, 100) + nbl_db$Away, data = nbl_db, k = 20)
+nbl_elo_ratings_adj4hc <- data.frame(Elo.Ratings = final.elos(nbl_elo_calcs_adj4hc))
+nbl_elo_ratings_adj4hc <- rownames_to_column(nbl_elo_ratings_adj4hc, "Teams")
+nbl_elo_ratings_adj4hc <- arrange(nbl_elo_ratings_adj4hc, desc(Elo.Ratings))
+
+head(nbl_elo_ratings_adj4hc)
+```
+
+With only five seasons of data this doesn't make a huge difference, but it does highlight good and bad home teams, as will be shown in the viz at the end.
+ 
+### Adjusting for Margin of Victory
+
+The margin of victory is an important variable to consider, a 30 point win is not the same as a 1 point win, though in the standard elo rating it would be treated so. Though, as detailed in the FiveThirtyEight article, the margin of victory has diminishing returns. The difference between winning by 2 points and 7 points (a 5 point margin) should not be considered equivalent to the difference between winning by 25 and 30 points. The margin of victory multiplier accounts for this.
+ 
+The margn of victory multiplier (G) I used is taken straight from the FiveThirtyEight article, which looks like this:
+ 
+G = ((winning team's margin of victory + 3)0.8) / (7.5 + 0.006*(winner Elo - loser Elo + home field advantage adjustment)
+ 
+The for loop allows for more flexibility in calculations which comes in handy at this point. The multiplier is applied to the k value. The reason I couldn't use the elo.run function from ealier is that the G calculations requires the winner's and loser's elo rating at each step, which I couldn't get to work without the for loop. In the code below I use the ifelse function heavily to get these values as well as the home field advantage adjustment.
+
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+#Set up the initial team elo values data frame
+teams <- data.frame(team = unique(c(nbl_db$Home, nbl_db$Away)))
+
+#Set intial values to 1500 (Standard in elo ratings - see FiveThirtyEight article)
+teams <- teams %>%
+        mutate(elo = 1500)
+
+#Add col with the absolute margin of victory for each game
+nbl_db$marg <- abs(nbl_db$Home_Score - nbl_db$Away_Score)
+
+for (i in seq_len(nrow(nbl_db))) {
+        game <- nbl_db[i, ]
+        
+        # Pre-match ratings
+        teamA_elo <- subset(teams, team == game$Home)$elo
+        teamB_elo <- subset(teams, team == game$Away)$elo
+        
+        # Update ratings and apply margin of victory multiplier
+        new_elo <- elo.calc(wins.A = game$result, elo.A = teamA_elo, elo.B = teamB_elo, k = 20*(((game$marg + 3)^0.8) / (7.5 + 0.006*( 
+                                    ifelse(game$Home_Score > game$Away_Score, teamA_elo, teamB_elo) - 
+                                             ifelse(game$Home_Score > game$Away_Score, teamB_elo, teamA_elo) + 
+                                                 ifelse(game$Home_Score > game$Away_Score, 100, -100)))))
+        
+        # The results come back as a data.frame
+        # with team A's new rating in row 1 / column 1
+        # and team B's new rating in row 1 / column 2
+        teamA_new_elo <- new_elo[1, 1]
+        teamB_new_elo <- new_elo[1, 2]
+        
+        # We then update the ratings for teams A and B
+        # and leave the other teams as they were
+        teams <- teams %>%
+                mutate(elo = if_else(team == game$Home, teamA_new_elo,
+                                     if_else(team == game$Away, teamB_new_elo, elo)))
+        teams <- arrange(teams, desc(elo))
+}
+
+head(teams)
+```
+
+### Visualisation
+
+Last step is to see what it looks like. This requires a fair bit of manipulation to get the data formatted for plotting. First, create a new data frame with the results of each elo method, rename the columns, then using the gather function, change to long form data. The all_elo_ratings2 data frame is created simply to get the mean elo rating (using rowMeans function) for each team and order the visualisation from highest mean elo to lowest.
+ 
+The plot then orders the x values by the 'team_order' variable created. The goem_jitter function applies random noise to the data points so they dont overlap each other, this is controled with the width call.
+
+
+```{r, warning=FALSE, message=FALSE, error=FALSE, echo = T}
+#Manipulate data to use with ggplot
+all_elo_ratings <- data.frame(std = nbl_elo_ratings_std, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
+colnames(all_elo_ratings) <- c("Teams", "Standard", "Home Court", "Margin")
+all_elo_ratings <- gather(all_elo_ratings, key = "Elo_Type", value = "Elo_Rating", Standard:Margin)
+#Set up the mean elo ratings in order for plot
+all_elo_ratings2 <- data.frame(std = nbl_elo_ratings_std, hca = nbl_elo_ratings_adj4hc$Elo.Ratings, margin = teams$elo)
+colnames(all_elo_ratings2) <- c("Teams", "Standard", "Home Court", "Margin")
+all_elo_ratings2$mean <- rowMeans(all_elo_ratings2[,2:4])
+all_elo_ratings2 <- arrange(all_elo_ratings2, desc(mean))
+team_order <- all_elo_ratings2$Teams
+
+#plot
+ggplot(data = all_elo_ratings, aes(x = factor(Teams, level = team_order), y = Elo_Rating, col = Elo_Type, group = Elo_Type)) +
+        geom_jitter(width = 0.1, size = 5) +
+        theme(axis.title.x=element_blank(),
+              axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5)) +
+        labs(colour = "Elo Type", y = "Elo Rating")
+
+```
+
+As can be seen, Melbourne and Adelaide are level when margin is accounted for, meaning MU won by smaller margins than the 36ers, lost by larger margins or both. Similarly, the plot shows the differences in home court advantage - NZ are better at home, while the Kings and Townsville did not show a home court advantage.
+
+### Shiny App
+
+I created a Shiny app that allows the user to change the k value. This has a significant effect on elo ratings as outlined in the FiveThirtyEight article. While the rather simple data is not suited to an interactive shiny app, I wanted to learn how they are made so I applied it here. Check it out (first link) and see the second link for the instructions I used to build it.
+
+https://analysingsport.shinyapps.io/NBL_Elo/
+
+https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/
+
+
+
